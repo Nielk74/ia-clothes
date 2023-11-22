@@ -6,6 +6,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import skimage
 import colour
 import csv
+np.random.seed(1)
 
 
 def colored_background(r, g, b, text):
@@ -42,7 +43,7 @@ for data in dict_skin.items():
 # exit(0)
 skin_data = np.array(skin_data)
 # Perform 3D clustering using KMeans
-num_clusters = 5
+num_clusters = 3
 kmeans = KMeans(n_clusters=num_clusters)
 # lab_data = np.apply_along_axis(rgb_to_lab, 1, data)
 lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, skin_data)
@@ -56,7 +57,7 @@ for i in range(num_clusters):
     rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
     len = skin_data[cluster_labels == i].shape[0]
     # show color rgb
-    print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Cluster {i + 1} : {len}'))
+    print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Cluster {i + 1} --------------------------------------------------------------------------------------------------------- {len}'))
     #get every point in cluster
     cluster = skin_data[cluster_labels == i]
     upper_data = []
@@ -68,9 +69,9 @@ for i in range(num_clusters):
     lower_data = np.array(lower_data)
     upper_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, upper_data)
     lower_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, lower_data)
-    km_upper = KMeans(n_clusters=10, n_init='auto')
+    km_upper = KMeans(n_clusters=15, n_init='auto')
     km_upper.fit(upper_lab_data)
-    km_lower = KMeans(n_clusters=10, n_init='auto')
+    km_lower = KMeans(n_clusters=15, n_init='auto')
     km_lower.fit(lower_lab_data)
     upper_cluster_labels = km_upper.labels_
     lower_cluster_labels = km_lower.labels_
@@ -80,21 +81,21 @@ for i in range(num_clusters):
     upper_color = []
     lower_color = []
     # sort by len of cluster shape
-    for j in range(10):
+    for j in range(15):
         upper_color.append([upper_cluster_centers[j], upper_data[upper_cluster_labels == j].shape[0]])
         lower_color.append([lower_cluster_centers[j], lower_data[lower_cluster_labels == j].shape[0]])
     upper_color = sorted(upper_color, key=lambda x: x[1], reverse=True)
     lower_color = sorted(lower_color, key=lambda x: x[1], reverse=True)
 
     # print top 3 color
-    for c in upper_color[:3]:
+    for c in upper_color[:5]:
         lab = c[0]
         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
-        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Upper color : {c[1]}'))
-    for c in lower_color[:3]:
+        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Upper color ----------------------------- {c[1]}'))
+    for c in lower_color[:5]:
         lab = c[0]
         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
-        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Lower color : {c[1]}'))
+        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Lower color ------------------------------ {c[1]}'))
 
 
 
