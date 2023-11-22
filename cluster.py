@@ -36,26 +36,73 @@ def get_data_from_input(path):
 dict_skin = get_data_from_input('input.csv')
 skin_data = []
 for data in dict_skin.items():
-    skin_data.append([data[1]['upper'],data[1]['path']])
-for rgb in skin_data:
-   print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'{rgb[1]}'))
-exit(0)
+    skin_data.append(data[1]['skin'])
+# for rgb in skin_data:
+#    print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'{rgb[1]}'))
+# exit(0)
 skin_data = np.array(skin_data)
 # Perform 3D clustering using KMeans
-num_clusters = 10
+num_clusters = 5
 kmeans = KMeans(n_clusters=num_clusters)
-def distance(a, b):
-    return 0
 # lab_data = np.apply_along_axis(rgb_to_lab, 1, data)
 lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, skin_data)
-kmeans.eucledian_distances = distance
 kmeans.fit(lab_data)
 # Get cluster labels and cluster centers
 cluster_labels = kmeans.labels_
 cluster_centers = kmeans.cluster_centers_
 
+for i in range(num_clusters):
+    lab = cluster_centers[i]
+    rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
+    len = skin_data[cluster_labels == i].shape[0]
+    # show color rgb
+    print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Cluster {i + 1} : {len}'))
+    #get every point in cluster
+    cluster = skin_data[cluster_labels == i]
+    upper_data = []
+    lower_data = []
+    for c in cluster:
+        upper_data.append(dict_skin[str(c)]['upper'])
+        lower_data.append(dict_skin[str(c)]['lower'])
+    upper_data = np.array(upper_data)
+    lower_data = np.array(lower_data)
+    upper_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, upper_data)
+    lower_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, lower_data)
+    km_upper = KMeans(n_clusters=10, n_init='auto')
+    km_upper.fit(upper_lab_data)
+    km_lower = KMeans(n_clusters=10, n_init='auto')
+    km_lower.fit(lower_lab_data)
+    upper_cluster_labels = km_upper.labels_
+    lower_cluster_labels = km_lower.labels_
+    upper_cluster_centers = km_upper.cluster_centers_
+    lower_cluster_centers = km_lower.cluster_centers_
+    # get the top 3 color
+    upper_color = []
+    lower_color = []
+    # sort by len of cluster shape
+    for c in upper_cluster_centers:
+        upper_color.append([c, upper_data[upper_cluster_labels == i].shape[0]])
+    upper_color = sorted(upper_color, key=lambda x: x[1], reverse=True)
+    for c in lower_cluster_centers:
+        lower_color.append([c, lower_data[lower_cluster_labels == i].shape[0]])
+    lower_color = sorted(lower_color, key=lambda x: x[1], reverse=True)
+
+    # print top 3 color
+    for c in upper_color[:3]:
+        lab = c[0]
+        rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
+        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Upper color : {c[1]}'))
+    for c in lower_color[:3]:
+        lab = c[0]
+        rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
+        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Lower color : {c[1]}'))
 
 
+
+        # print(colored_background(int(rgb[0]), int(rgb[1]), int(rgb[2]), f'Cluster {i + 1}'))
+    
+
+exit(0)
 
 # Visualize the clustered points in 3D
 fig = plt.figure()
