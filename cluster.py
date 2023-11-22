@@ -80,11 +80,10 @@ for i in range(num_clusters):
     upper_color = []
     lower_color = []
     # sort by len of cluster shape
-    for c in upper_cluster_centers:
-        upper_color.append([c, upper_data[upper_cluster_labels == i].shape[0]])
+    for j in range(10):
+        upper_color.append([upper_cluster_centers[j], upper_data[upper_cluster_labels == j].shape[0]])
+        lower_color.append([lower_cluster_centers[j], lower_data[lower_cluster_labels == j].shape[0]])
     upper_color = sorted(upper_color, key=lambda x: x[1], reverse=True)
-    for c in lower_cluster_centers:
-        lower_color.append([c, lower_data[lower_cluster_labels == i].shape[0]])
     lower_color = sorted(lower_color, key=lambda x: x[1], reverse=True)
 
     # print top 3 color
