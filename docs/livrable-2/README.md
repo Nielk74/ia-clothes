@@ -49,7 +49,7 @@ original_files = glob.glob(images_path + "/*")
 for file in original_files:
     img = cv2.imread(file)
     img_50 = cv2.resize(img, None, fx = 0.50, fy = 0.50)
-    cv2.imwrite(compressed_path + "/" + file.split("/")[-1], img_50)
+    cv2.imwrite(resized_path + "/" + file.split("/")[-1], img_50)
 ```
 
 Ce jeu de données présente tout de même plusieurs biais :
