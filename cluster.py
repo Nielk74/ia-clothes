@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import skimage
 import colour
+from colour.models import RGB_COLOURSPACE_sRGB
 import csv
 np.random.seed(1)
 
@@ -33,8 +34,11 @@ def get_data_from_input(path):
     return dict_skin
 
 
+def normalize_to_srgb(rgb):
+    return np.dot(1/255,rgb)
+dict_skin = get_data_from_input('women-improved.csv')
+# dict_skin = get_data_from_input('input.csv')
 
-dict_skin = get_data_from_input('input.csv')
 skin_data = []
 for data in dict_skin.items():
     skin_data.append(data[1]['skin'])
@@ -46,7 +50,17 @@ skin_data = np.array(skin_data)
 num_clusters = 3
 kmeans = KMeans(n_clusters=num_clusters)
 # lab_data = np.apply_along_axis(rgb_to_lab, 1, data)
-lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, skin_data)
+m_lab = np.dot(5.6508,[[0.49, 0.31, 0.20], [0.17697, 0.81240, 0.01063], [0, 0.01, 0.99]])
+mm_lab = np.linalg.inv(m_lab)
+
+tmp_skin_data = skin_data
+# for i in range(len(skin_data)):
+#     tmp_skin_data[i] = np.dot(m_lab, tmp_skin_data[i])
+color_space = (RGB_COLOURSPACE_sRGB,)
+lab_data = np.apply_along_axis(normalize_to_srgb, 1, skin_data)
+lab_data = np.apply_along_axis(colour.RGB_to_XYZ, 1, lab_data, *color_space)
+lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, lab_data)
+
 kmeans.fit(lab_data)
 # Get cluster labels and cluster centers
 cluster_labels = kmeans.labels_
@@ -55,6 +69,8 @@ cluster_centers = kmeans.cluster_centers_
 for i in range(num_clusters):
     lab = cluster_centers[i]
     rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
+    rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
+    rgb = np.dot(255,rgb)
     len = skin_data[cluster_labels == i].shape[0]
     # show color rgb
     print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Cluster {i + 1} --------------------------------------------------------------------------------------------------------- {len}'))
@@ -67,11 +83,22 @@ for i in range(num_clusters):
         lower_data.append(dict_skin[str(c)]['lower'])
     upper_data = np.array(upper_data)
     lower_data = np.array(lower_data)
-    upper_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, upper_data)
-    lower_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, lower_data)
-    km_upper = KMeans(n_clusters=15, n_init='auto')
+    # tmp_upper_data = upper_data
+    # tmp_lower_data = lower_data
+    # for j in range(len(upper_data)):
+    #     tmp_upper_data[j] = np.dot(m_lab, tmp_upper_data[j])
+    # for j in range(len(lower_data)):
+    #     tmp_lower_data[j] = np.dot(m_lab, tmp_lower_data[j])
+    upper_lab_data = np.apply_along_axis(normalize_to_srgb, 1 , upper_data)
+    lower_lab_data = np.apply_along_axis(normalize_to_srgb, 1, lower_data)
+    upper_lab_data = np.apply_along_axis(colour.RGB_to_XYZ, 1, upper_lab_data, *color_space)
+    lower_lab_data = np.apply_along_axis(colour.RGB_to_XYZ, 1, lower_lab_data, *color_space)
+    upper_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, upper_lab_data)
+    lower_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, lower_lab_data)
+    n_colors = 15
+    km_upper = KMeans(n_clusters=n_colors, n_init='auto')
     km_upper.fit(upper_lab_data)
-    km_lower = KMeans(n_clusters=15, n_init='auto')
+    km_lower = KMeans(n_clusters=n_colors, n_init='auto')
     km_lower.fit(lower_lab_data)
     upper_cluster_labels = km_upper.labels_
     lower_cluster_labels = km_lower.labels_
@@ -81,7 +108,7 @@ for i in range(num_clusters):
     upper_color = []
     lower_color = []
     # sort by len of cluster shape
-    for j in range(15):
+    for j in range(n_colors):
         upper_color.append([upper_cluster_centers[j], upper_data[upper_cluster_labels == j].shape[0]])
         lower_color.append([lower_cluster_centers[j], lower_data[lower_cluster_labels == j].shape[0]])
     upper_color = sorted(upper_color, key=lambda x: x[1], reverse=True)
@@ -90,13 +117,29 @@ for i in range(num_clusters):
     # print top 3 color
     for c in upper_color[:5]:
         lab = c[0]
+        # lab = np.dot(mm_lab, lab)
         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
-        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Upper color ----------------------------- {c[1]}'))
-    for c in lower_color[:5]:
+        rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
+        rgb = np.dot(255,rgb)
+        diff = abs(rgb[0][0] - rgb[0][1]) + abs(rgb[0][1] - rgb[0][2]) + abs(rgb[0][0] - rgb[0][2])
+        if diff < 15:
+            print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Upper color ----------------------------- {c[1]} | {lab} | {diff}'))
+    for c in lower_color[:]:
         lab = c[0]
+        # lab = np.dot(mm_lab, lab)
         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
-        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Lower color ------------------------------ {c[1]}'))
+        rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
+        rgb = np.dot(255,rgb)
+        diff = abs(rgb[0][0] - rgb[0][1]) + abs(rgb[0][1] - rgb[0][2]) + abs(rgb[0][0] - rgb[0][2])
+        if diff >15:
+            print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Lower color ------------------------------ {c[1]} | {lab} | {diff}'))
 
+    cross_table = []
+    for u in range(n_colors):
+        for l in range(n_colors):
+            cross_table[u][j] = 0
+
+    
 
 
         # print(colored_background(int(rgb[0]), int(rgb[1]), int(rgb[2]), f'Cluster {i + 1}'))
