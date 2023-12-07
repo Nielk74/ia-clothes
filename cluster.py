@@ -1,12 +1,10 @@
 import numpy as np
 from sklearn.cluster import KMeans
-from sklearn.metrics.pairwise import pairwise_distances_argmin_min
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import colour
 from colour.models import RGB_COLOURSPACE_sRGB
 import csv
-np.random.seed(1)
 
 
 def colored_background(r, g, b, text):
@@ -35,6 +33,7 @@ def get_data_from_input(path):
 
 def normalize_to_srgb(rgb):
     return np.dot(1/255,rgb)
+
 # on construit un dicitionnaire de données de peau et de vêtements associés
 # dict_skin = {'124, 123, 123': {'upper': [255, 255, 255], 'lower': [255, 255, 255], 'skin': [124, 123, 123], 'path': 'path/to/image'},...}
 dict_skin = get_data_from_input('input.csv')
@@ -51,8 +50,6 @@ skin_data = np.array(skin_data)
 num_clusters = 3
 kmeans = KMeans(n_clusters=num_clusters)
 # lab_data = np.apply_along_axis(rgb_to_lab, 1, data)
-m_lab = np.dot(5.6508,[[0.49, 0.31, 0.20], [0.17697, 0.81240, 0.01063], [0, 0.01, 0.99]])
-mm_lab = np.linalg.inv(m_lab)
 
 tmp_skin_data = skin_data
 # for i in range(len(skin_data)):
@@ -111,69 +108,21 @@ for i in range(num_clusters): # on parcourt les clusters de peau
     lower_color = sorted(lower_color, key=lambda x: x[1], reverse=True)
 
     # on affiche les 5 premiers clusters pour les vêtements
-    for c in upper_color[:5]:
+    for c in upper_color[:]:
         lab = c[0]
-        # lab = np.dot(mm_lab, lab)
         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
         rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
         rgb = np.dot(255,rgb)
+        # Filtrer couleur grise/noir/blanc
         diff = abs(rgb[0][0] - rgb[0][1]) + abs(rgb[0][1] - rgb[0][2]) + abs(rgb[0][0] - rgb[0][2])
-        if diff < 15:
+        if diff > 15:
             print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Upper color ----------------------------- {c[1]} | {lab} | {diff}'))
     for c in lower_color[:]:
         lab = c[0]
-        # lab = np.dot(mm_lab, lab)
         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
         rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
         rgb = np.dot(255,rgb)
         diff = abs(rgb[0][0] - rgb[0][1]) + abs(rgb[0][1] - rgb[0][2]) + abs(rgb[0][0] - rgb[0][2])
-        if diff >15:
+        # Filtrer couleur grise/noir/blanc
+        if diff > 15:
             print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Lower color ------------------------------ {c[1]} | {lab} | {diff}'))
-
-
-    
-
-
-        # print(colored_background(int(rgb[0]), int(rgb[1]), int(rgb[2]), f'Cluster {i + 1}'))
-    
-
-exit(0)
-
-# Visualize the clustered points in 3D
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-# Plot points with their assigned clusters
-for i in range(num_clusters):
-    # show color of each center
-    if 1==0:
-        rgb = cluster_centers[i]
-        print(colored_background(int(rgb[0]), int(rgb[1]), int(rgb[2]), f'Cluster {i + 1}'))
-    else:
-        lab = cluster_centers[i]
-        rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
-        len = skin_data[cluster_labels == i].shape[0]
-        # show color rgb
-        print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Cluster {i + 1} : {len}'))
-
-for i in range(num_clusters):
-    rgb = [skin_data[cluster_labels == i][0][0]/255, skin_data[cluster_labels == i][0][1]/255, skin_data[cluster_labels == i][0][2]/255]
-    ax.scatter(skin_data[cluster_labels == i, 0], skin_data[cluster_labels == i, 1], skin_data[cluster_labels == i, 2], label=f'Cluster {i + 1}', c=[rgb])
-
-# for c in data:
-#     rgb = [c[0]/255, c[1]/255, c[2]/255]
-#     ax.scatter(c[0], c[1], c[2], label=f'Cluster {i + 1}', c=[rgb])
-# Plot cluster centers
-# for i in range(num_clusters):
-#     center_in_lab = colour.XYZ_to_Lab([[cluster_centers[i, 0], cluster_centers[i, 1], cluster_centers[i, 2]]])
-#     ax.scatter(center_in_lab[0][0]*255, center_in_lab[0][1]*255, center_in_lab[0][2]*255, s=100, c='black', marker='x')
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-ax.set_zlabel('Z Label')
-
-# for c in data:
-#     print(colored_background(int(c[0]), int(c[1]), int(c[2]), f'---------------'))
-# Add legend
-ax.legend()
-
-# Show the 3D plot
-plt.show()
