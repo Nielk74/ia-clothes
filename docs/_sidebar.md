@@ -1,3 +1,5 @@
 * [Accueil](/)
 * [Livrable 1](livrable-1/)
 * [Livrable 2](livrable-2/)
+* [Livrable 3 : Preuve de concept](livrable-3/)
+* [Livrable final](livrable-final/)
