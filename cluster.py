@@ -3,7 +3,6 @@ from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import pairwise_distances_argmin_min
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import skimage
 import colour
 from colour.models import RGB_COLOURSPACE_sRGB
 import csv
