@@ -45,12 +45,11 @@ def lab_to_rgb(lab):
 color_space = (RGB_COLOURSPACE_sRGB,)
 
 def clustering(num_clusters, data):
-    kmeans = KMeans(n_clusters=num_clusters)
+    kmeans = KMeans(n_clusters=num_clusters, n_init=num_clusters)
 
     lab_data = np.apply_along_axis(normalize_to_srgb, 1, data)
     lab_data = np.apply_along_axis(colour.RGB_to_XYZ, 1, lab_data, *color_space)
     lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, lab_data)
-
     kmeans.fit(lab_data)
     
     # Get cluster labels and cluster centers
@@ -119,22 +118,30 @@ for data in dict_skin.items():
     else:
         occurences[key] = {'skin_cluster': skin_cluster, 'upper_cluster': upper_cluster, 'lower_cluster': lower_cluster, 'occurences': 1, 'path': path}
     
-# for each skin cluster, we print the 3 combinations of upper and lower clothes that are the most frequent
+
+list_skin_rgb = []
 for skin_cluster in range(nb_cluster_skin):
-    rgb_skin = lab_to_rgb(cluster_centers_skin[skin_cluster])
-    print('\n')
-    print(colored_background(int(rgb_skin[0]), int(rgb_skin[1]), int(rgb_skin[2]), f'Skin {skin_cluster}'), end=' ')
-    print('\n')
-    occurences_by_skin_cluster = get_occurences_by_skin_cluster(skin_cluster, occurences)
-    for i in range(5):
-        key = list(occurences_by_skin_cluster.keys())[i]
-        value = occurences_by_skin_cluster[key]
-        rgb_upper = lab_to_rgb(cluster_centers_upper[value['upper_cluster']])
-        rgb_lower = lab_to_rgb(cluster_centers_lower[value['lower_cluster']])
-        print("Occurences : " + str(value['occurences']), end=' ')
-        print(colored_background(int(rgb_upper[0]), int(rgb_upper[1]), int(rgb_upper[2]), f'Upper {value["upper_cluster"]}'), end=' ')
-        print(colored_background(int(rgb_lower[0]), int(rgb_lower[1]), int(rgb_lower[2]), f'Lower {value["lower_cluster"]}'), end=' ')
-        print("Exemple d'image : " + value['path'])
-        print("\n")
-        # print('\t'+colored_background(int(cluster_centers_upper[value['upper_cluster']][0]*255), int(cluster_centers_upper[value['upper_cluster']][1]*255), int(cluster_centers_upper[value['upper_cluster']][2]*255), f'Upper {value["upper_cluster"]}'), end=' ')
-        # print(colored_background(int(cluster_centers_lower[value['lower_cluster']][0]*255), int(cluster_centers_lower[value['lower_cluster']][1]*255), int(cluster_centers_lower[value['lower_cluster']][2]*255), f'Lower {value["lower_cluster"]}'), end=' ')
+    list_skin_rgb.append({"color":lab_to_rgb(cluster_centers_skin[skin_cluster]), "num_cluster":skin_cluster})
+
+# sort skin clusters by luminance
+list_skin_rgb = sorted(list_skin_rgb, key=lambda x: x["color"][0])
+for skin in list_skin_rgb:
+    print(colored_background(int(skin["color"][0]), int(skin["color"][1]), int(skin["color"][2]), 'num cluster ' + str(skin["num_cluster"])), end=' ')
+
+# wait for user to choose skin cluster
+print('\n')
+skin_choice = int(input('Choose skin cluster ( 1-'+str(nb_cluster_skin)+' ) : '))
+skin_cluster = list_skin_rgb[skin_choice-1]["num_cluster"]
+
+occurences_by_skin_cluster = get_occurences_by_skin_cluster(skin_cluster, occurences)
+print("For the skin tone : " + colored_background(int(list_skin_rgb[skin_choice-1]["color"][0]), int(list_skin_rgb[skin_choice-1]["color"][1]), int(list_skin_rgb[skin_choice-1]["color"][2]), '           '))
+for i in range(10):
+    key = list(occurences_by_skin_cluster.keys())[i]
+    value = occurences_by_skin_cluster[key]
+    rgb_upper = lab_to_rgb(cluster_centers_upper[value['upper_cluster']])
+    rgb_lower = lab_to_rgb(cluster_centers_lower[value['lower_cluster']])
+    print("Occurences : " + str(value['occurences']), end=' ')
+    print(colored_background(int(rgb_upper[0]), int(rgb_upper[1]), int(rgb_upper[2]), f'Upper {value["upper_cluster"]}'), end=' ')
+    print(colored_background(int(rgb_lower[0]), int(rgb_lower[1]), int(rgb_lower[2]), f'Lower {value["lower_cluster"]}'), end=' ')
+    print("Exemple d'image : " + value['path'])
+    print("\n")
