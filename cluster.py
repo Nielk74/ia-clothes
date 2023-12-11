@@ -21,8 +21,8 @@ def get_data_from_input(path):
                 continue 
 
             skin_column = row[3].strip()
-            upper_column = row[2].strip()
-            lower_column = row[1].strip()
+            upper_column = row[1].strip()
+            lower_column = row[2].strip()
 
             rgb_skin = np.array(skin_column.split(',')).astype(np.uint8)
             rgb_upper = np.array(upper_column.split(',')).astype(np.uint8)
@@ -34,6 +34,13 @@ def get_data_from_input(path):
 def normalize_to_srgb(rgb):
     return np.dot(1/255,rgb)
 
+def lab_to_rgb(lab):
+    lab = np.array(lab)
+    lab = np.reshape(lab, (1,3))
+    lab = np.apply_along_axis(colour.Lab_to_XYZ, 1, lab)
+    lab = np.apply_along_axis(colour.XYZ_to_RGB, 1, lab, *color_space)
+    lab = np.apply_along_axis(np.dot, 1, lab, 255)
+    return lab[0]
 
 color_space = (RGB_COLOURSPACE_sRGB,)
 
@@ -52,6 +59,14 @@ def clustering(num_clusters, data):
 
     return cluster_labels, cluster_centers
 
+
+def get_occurences_by_skin_cluster(skin_cluster, occurences):
+    occurences_by_skin_cluster = {}
+    for key, value in occurences.items():
+        if value['skin_cluster'] == skin_cluster:
+            occurences_by_skin_cluster[key] = value
+    occurences_by_skin_cluster = {k: v for k, v in sorted(occurences_by_skin_cluster.items(), key=lambda item: item[1]['occurences'], reverse=True)}
+    return occurences_by_skin_cluster
 
 
 # on construit un dicitionnaire de données de peau et de vêtements associés
@@ -80,70 +95,46 @@ cluster_labels_skin, cluster_centers_skin = clustering(nb_cluster_skin, skin_dat
 cluster_labels_upper, cluster_centers_upper = clustering(nb_cluster_upper, upper_data)
 cluster_labels_lower, cluster_centers_lower = clustering(nb_cluster_lower, lower_data)
 
-print(cluster_labels_skin)
-print(cluster_centers_skin)
+occurences = {}
 
+for data in dict_skin.items():
+    skin = data[1]['skin']
+    upper = data[1]['upper']
+    lower = data[1]['lower']
+    path = data[1]['path']
 
+    skin_cluster = cluster_labels_skin[np.where((skin_data == skin).all(axis=1))][0]
+    upper_cluster = cluster_labels_upper[np.where((upper_data == upper).all(axis=1))][0]
+    lower_cluster = cluster_labels_lower[np.where((lower_data == lower).all(axis=1))][0]
+    
+    # check if cluster_centers_upper[upper_cluster] and cluster_centers_lower[lower_cluster] are not too close
+    rgb_upper = lab_to_rgb(cluster_centers_upper[upper_cluster])
+    rgb_lower = lab_to_rgb(cluster_centers_lower[lower_cluster])
+    diff_upper = abs(rgb_upper[0] - rgb_upper[1]) + abs(rgb_upper[1] - rgb_upper[2]) + abs(rgb_upper[0] - rgb_upper[2])
+    diff_lower = abs(rgb_lower[0] - rgb_lower[1]) + abs(rgb_lower[1] - rgb_lower[2]) + abs(rgb_lower[0] - rgb_lower[2])
+    key = str(skin_cluster) + str(upper_cluster) + str(lower_cluster)
 
-
-# for i in range(5): # on parcourt les clusters de peau
-#     lab = cluster_centers[i] # on récupère le centre du cluster
-#     rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]]) # on convertit en RGB
-#     rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
-#     rgb = np.dot(255,rgb)
-#     len = skin_data[cluster_labels == i].shape[0] # on récupère le nombre de points dans le cluster
-#     # show color rgb
-#     print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Cluster {i + 1} --------------------------------------------------------------------------------------------------------- {len}'))
-#     cluster = skin_data[cluster_labels == i] # on récupère les points du cluster `i`
-#     upper_data = []
-#     lower_data = []
-#     for c in cluster:
-#         upper_data.append(dict_skin[str(c)]['upper']) # récupère les couleurs des vêtements associés dans le dictionnaire
-#         lower_data.append(dict_skin[str(c)]['lower'])
-#     upper_data = np.array(upper_data)
-#     lower_data = np.array(lower_data)
-#     # créations de clusters pour les données récupérées (vêtements)
-#     upper_lab_data = np.apply_along_axis(normalize_to_srgb, 1 , upper_data)
-#     lower_lab_data = np.apply_along_axis(normalize_to_srgb, 1, lower_data)
-#     upper_lab_data = np.apply_along_axis(colour.RGB_to_XYZ, 1, upper_lab_data, *color_space)
-#     lower_lab_data = np.apply_along_axis(colour.RGB_to_XYZ, 1, lower_lab_data, *color_space)
-#     upper_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, upper_lab_data)
-#     lower_lab_data = np.apply_along_axis(colour.XYZ_to_Lab, 1, lower_lab_data)
-#     n_colors = 15
-#     km_upper = KMeans(n_clusters=n_colors, n_init='auto')
-#     km_upper.fit(upper_lab_data)
-#     km_lower = KMeans(n_clusters=n_colors, n_init='auto')
-#     km_lower.fit(lower_lab_data)
-#     upper_cluster_labels = km_upper.labels_
-#     lower_cluster_labels = km_lower.labels_
-#     upper_cluster_centers = km_upper.cluster_centers_
-#     lower_cluster_centers = km_lower.cluster_centers_
-#     # get the top 3 color
-#     upper_color = []
-#     lower_color = []
-#     # on trie les clusters par nombre de points dans le cluster
-#     for j in range(n_colors):
-#         upper_color.append([upper_cluster_centers[j], upper_data[upper_cluster_labels == j].shape[0]])
-#         lower_color.append([lower_cluster_centers[j], lower_data[lower_cluster_labels == j].shape[0]])
-#     upper_color = sorted(upper_color, key=lambda x: x[1], reverse=True)
-#     lower_color = sorted(lower_color, key=lambda x: x[1], reverse=True)
-
-#     # on affiche les 5 premiers clusters pour les vêtements
-#     for c in upper_color[:]:
-#         lab = c[0]
-#         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
-#         rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
-#         rgb = np.dot(255,rgb)
-#         # Filtrer couleur grise/noir/blanc
-#         diff = abs(rgb[0][0] - rgb[0][1]) + abs(rgb[0][1] - rgb[0][2]) + abs(rgb[0][0] - rgb[0][2])
-#         if diff > 15:
-#             print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Upper color ----------------------------- {c[1]} | {lab} | {diff}'))
-#     for c in lower_color[:]:
-#         lab = c[0]
-#         rgb = colour.Lab_to_XYZ([[lab[0], lab[1], lab[2]]])
-#         rgb = colour.XYZ_to_RGB(rgb, RGB_COLOURSPACE_sRGB)
-#         rgb = np.dot(255,rgb)
-#         diff = abs(rgb[0][0] - rgb[0][1]) + abs(rgb[0][1] - rgb[0][2]) + abs(rgb[0][0] - rgb[0][2])
-#         # Filtrer couleur grise/noir/blanc
-#         if diff > 15:
-#             print(colored_background(int(rgb[0][0]), int(rgb[0][1]), int(rgb[0][2]), f'Lower color ------------------------------ {c[1]} | {lab} | {diff}'))
+    if key in occurences:
+        occurences[key]['occurences'] += 1
+    else:
+        occurences[key] = {'skin_cluster': skin_cluster, 'upper_cluster': upper_cluster, 'lower_cluster': lower_cluster, 'occurences': 1, 'path': path}
+    
+# for each skin cluster, we print the 3 combinations of upper and lower clothes that are the most frequent
+for skin_cluster in range(nb_cluster_skin):
+    rgb_skin = lab_to_rgb(cluster_centers_skin[skin_cluster])
+    print('\n')
+    print(colored_background(int(rgb_skin[0]), int(rgb_skin[1]), int(rgb_skin[2]), f'Skin {skin_cluster}'), end=' ')
+    print('\n')
+    occurences_by_skin_cluster = get_occurences_by_skin_cluster(skin_cluster, occurences)
+    for i in range(5):
+        key = list(occurences_by_skin_cluster.keys())[i]
+        value = occurences_by_skin_cluster[key]
+        rgb_upper = lab_to_rgb(cluster_centers_upper[value['upper_cluster']])
+        rgb_lower = lab_to_rgb(cluster_centers_lower[value['lower_cluster']])
+        print("Occurences : " + str(value['occurences']), end=' ')
+        print(colored_background(int(rgb_upper[0]), int(rgb_upper[1]), int(rgb_upper[2]), f'Upper {value["upper_cluster"]}'), end=' ')
+        print(colored_background(int(rgb_lower[0]), int(rgb_lower[1]), int(rgb_lower[2]), f'Lower {value["lower_cluster"]}'), end=' ')
+        print("Exemple d'image : " + value['path'])
+        print("\n")
+        # print('\t'+colored_background(int(cluster_centers_upper[value['upper_cluster']][0]*255), int(cluster_centers_upper[value['upper_cluster']][1]*255), int(cluster_centers_upper[value['upper_cluster']][2]*255), f'Upper {value["upper_cluster"]}'), end=' ')
+        # print(colored_background(int(cluster_centers_lower[value['lower_cluster']][0]*255), int(cluster_centers_lower[value['lower_cluster']][1]*255), int(cluster_centers_lower[value['lower_cluster']][2]*255), f'Lower {value["lower_cluster"]}'), end=' ')
