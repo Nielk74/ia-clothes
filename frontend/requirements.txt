@@ -1,0 +1,6 @@
+streamlit==1.22.0
+transformers
+torch
+altair<5
+extcolors
+opencv-python
