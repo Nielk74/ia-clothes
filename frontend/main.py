@@ -1,5 +1,4 @@
 import streamlit as st
-from transformers import pipeline
 from PIL import Image
 import cv2
 import numpy as np
@@ -35,6 +34,7 @@ def getColorDominantFromMask(image, mask):
   colors = extcolors.extract_from_image(pil_image)
   return colors[0][0]
 
+
 def get_skin_color(image):
   inputs = processor(images=image, return_tensors="pt").to(device)
   outputs = model(**inputs)
@@ -64,20 +64,54 @@ def get_skin_color(image):
 
   return getColorDominantFromMask(image,skin_mask)
 
-#pipeline = pipeline(task="skin-color-detection", model="mattmdjaga/segformer_b2_clothes")
 
-st.title("My title")
+def get_occurences_by_skin_cluster(skin_cluster, occurences):
+    occurences_by_skin_cluster = {}
+    for key, value in occurences.items():
+        if value['skin_cluster'] == skin_cluster:
+            occurences_by_skin_cluster[key] = value
+    occurences_by_skin_cluster = {k: v for k, v in sorted(occurences_by_skin_cluster.items(), key=lambda item: item[1]['occurences'], reverse=True)}
+    return occurences_by_skin_cluster
 
-file_name = st.file_uploader("Upload a full body image")
 
-if file_name is not None:
-    col1, col2 = st.columns(2)
+def write_color(color):
+  return f'<p style="background-color:rgb{color}; width:20px; height: 20px"></p>'
 
-    image = Image.open(file_name)
-    col1.image(image, use_column_width=True)
-    predictions = get_skin_color(image)
 
-    col2.header("Probabilities")
-    st.write(predictions)
-    # for p in predictions:
-    #     col2.subheader(f"{ p['label'] }: { round(p['score'] * 100, 1)}%")
+def get_result(file_name, result_container):
+  if (file_name is None):
+    st.error("Please upload an image")
+    return
+
+  # double column layout
+  col1, col2 = result_container.columns(2)
+
+  # display the image
+  image = Image.open(file_name)
+  col1.image(image, use_column_width=True)
+
+  # display the detected skin color
+  skin_color, pixel_count = get_skin_color(image)
+  col2.header("Detected skin color")
+  col2.markdown(write_color(skin_color), unsafe_allow_html=True)
+
+  col2.header("Clothing colors occurences")
+  col2.write("TODO")
+
+
+def render_page():
+  st.title("ENSIMAG AI project")
+
+  formCol1, formCol2 = st.columns(2)
+  formCol1.radio("Gender", ["Male", "Female"])
+  formCol2.radio("Number of clothing color clusters", ["20", "40"])
+
+  file_name = st.file_uploader("Upload a full body image")
+
+  with st.container():
+    if st.button("Submit"):
+      get_result(file_name, st)
+
+
+if __name__ == "__main__":
+  render_page()
