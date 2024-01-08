@@ -1,6 +1,6 @@
-streamlit==1.22.0
+streamlit
 transformers
 torch
-altair<5
+altair
 extcolors
-opencv-python
+opencv-python-headless
