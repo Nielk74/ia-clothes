@@ -6,14 +6,12 @@ from transformers import SegformerImageProcessor, AutoModelForSemanticSegmentati
 import torch.nn as nn
 import torch
 import extcolors
-import json
 import colour
 from colour.models import RGB_COLOURSPACE_sRGB
-import pathlib
-import sys
+import requests
 
-dir = pathlib.Path(__file__).parent.resolve()
-sys.path.append(dir)
+clusters = requests.get('https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/clusters.json').json()
+occurences = requests.get('https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/occurences.json').json()
 processor = SegformerImageProcessor.from_pretrained("mattmdjaga/segformer_b2_clothes")
 model = AutoModelForSemanticSegmentation.from_pretrained("mattmdjaga/segformer_b2_clothes")
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
@@ -93,7 +91,6 @@ def lab_to_rgb(lab):
 
 
 def get_closest_skin_cluster_index(skin_color):
-    clusters = json.load(open('clusters.json'))
     cluster_centers_skin = clusters["cluster_centers_skin"]
     lab_input = rgb_to_lab(skin_color)
     # find the closest skin cluster index
@@ -109,7 +106,6 @@ def get_closest_skin_cluster_index(skin_color):
 
 
 def get_occurences_by_skin_cluster_index(skin_cluster_index):
-    occurences = json.load(open('occurences.json'))
     occurences_by_skin_cluster = {}
     for key, value in occurences.items():
         if value['skin_cluster'] == skin_cluster_index:
@@ -142,7 +138,6 @@ def get_result(file_name):
   st.header("Clothing colors occurences")
   closest_skin_cluster_index = get_closest_skin_cluster_index(skin_color)
   occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index)
-  clusters = json.load(open('clusters.json'))
   cluster_centers_upper = clusters["cluster_centers_upper"]
   cluster_centers_lower = clusters["cluster_centers_lower"]
   for i in range(10):

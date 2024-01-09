@@ -5,4 +5,4 @@ altair
 extcolors
 opencv-python-headless
 colour-science
-pathlib
+requests
