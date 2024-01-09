@@ -9,8 +9,11 @@ import extcolors
 import json
 import colour
 from colour.models import RGB_COLOURSPACE_sRGB
+import pathlib
+import sys
 
-
+dir = pathlib.Path(__file__).parent.resolve()
+sys.path.append(dir)
 processor = SegformerImageProcessor.from_pretrained("mattmdjaga/segformer_b2_clothes")
 model = AutoModelForSemanticSegmentation.from_pretrained("mattmdjaga/segformer_b2_clothes")
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
