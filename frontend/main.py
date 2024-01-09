@@ -6,12 +6,16 @@ from transformers import SegformerImageProcessor, AutoModelForSemanticSegmentati
 import torch.nn as nn
 import torch
 import extcolors
+import json
+import colour
+from colour.models import RGB_COLOURSPACE_sRGB
 
 
 processor = SegformerImageProcessor.from_pretrained("mattmdjaga/segformer_b2_clothes")
 model = AutoModelForSemanticSegmentation.from_pretrained("mattmdjaga/segformer_b2_clothes")
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 model.to(device)
+color_space = (RGB_COLOURSPACE_sRGB,)
 
 
 def getColorDominantFromMask(image, mask):
@@ -65,52 +69,106 @@ def get_skin_color(image):
   return getColorDominantFromMask(image,skin_mask)
 
 
-def get_occurences_by_skin_cluster(skin_cluster, occurences):
+def normalize_to_srgb(rgb):
+    return np.dot(1/255,rgb)
+
+
+def rgb_to_lab(rgb):
+    rgb = normalize_to_srgb(rgb)
+    rgb = colour.RGB_to_XYZ(rgb, *color_space)
+    rgb = colour.XYZ_to_Lab(rgb)
+    return rgb
+
+
+def lab_to_rgb(lab):
+    lab = np.array(lab)
+    lab = np.reshape(lab, (1,3))
+    lab = np.apply_along_axis(colour.Lab_to_XYZ, 1, lab)
+    lab = np.apply_along_axis(colour.XYZ_to_RGB, 1, lab, *color_space)
+    lab = np.apply_along_axis(np.dot, 1, lab, 255)
+    return lab[0]
+
+
+def get_closest_skin_cluster_index(skin_color):
+    clusters = json.load(open('clusters.json'))
+    cluster_centers_skin = clusters["cluster_centers_skin"]
+    lab_input = rgb_to_lab(skin_color)
+    # find the closest skin cluster index
+    closest_skin_cluster_index = 0
+    closest_skin_cluster_distance = 10000
+    for skin_cluster_index in range(len(cluster_centers_skin)):
+        lab_skin_cluster = cluster_centers_skin[skin_cluster_index]
+        distance = np.linalg.norm(lab_input - lab_skin_cluster)
+        if distance < closest_skin_cluster_distance:
+            closest_skin_cluster_distance = distance
+            closest_skin_cluster_index = skin_cluster_index
+    return closest_skin_cluster_index
+
+
+def get_occurences_by_skin_cluster_index(skin_cluster_index):
+    occurences = json.load(open('occurences.json'))
     occurences_by_skin_cluster = {}
     for key, value in occurences.items():
-        if value['skin_cluster'] == skin_cluster:
+        if value['skin_cluster'] == skin_cluster_index:
             occurences_by_skin_cluster[key] = value
     occurences_by_skin_cluster = {k: v for k, v in sorted(occurences_by_skin_cluster.items(), key=lambda item: item[1]['occurences'], reverse=True)}
     return occurences_by_skin_cluster
 
 
 def write_color(color):
-  return f'<p style="background-color:rgb{color}; width:20px; height: 20px"></p>'
+  if (type(color) is np.ndarray):
+     color = "(" + ",".join(color.astype(str)) + ")"
+  return f'<p style="background-color:rgb{color}; width:40px; height: 40px"></p>'
 
 
-def get_result(file_name, result_container):
+def get_result(file_name):
   if (file_name is None):
     st.error("Please upload an image")
     return
 
-  # double column layout
-  col1, col2 = result_container.columns(2)
-
   # display the image
   image = Image.open(file_name)
-  col1.image(image, use_column_width=True)
+  st.image(image)
 
   # display the detected skin color
   skin_color, pixel_count = get_skin_color(image)
-  col2.header("Detected skin color")
-  col2.markdown(write_color(skin_color), unsafe_allow_html=True)
+  st.header("Detected skin color")
+  st.markdown(write_color(skin_color), unsafe_allow_html=True)
 
-  col2.header("Clothing colors occurences")
-  col2.write("TODO")
+  # display the clothing colors occurences matching the detected skin color
+  st.header("Clothing colors occurences")
+  closest_skin_cluster_index = get_closest_skin_cluster_index(skin_color)
+  occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index)
+  clusters = json.load(open('clusters.json'))
+  cluster_centers_upper = clusters["cluster_centers_upper"]
+  cluster_centers_lower = clusters["cluster_centers_lower"]
+  for i in range(10):
+    key = list(occurences_by_skin_cluster.keys())[i]
+    value = occurences_by_skin_cluster[key]
+    rgb_upper = lab_to_rgb(cluster_centers_upper[value['upper_cluster']])
+    rgb_lower = lab_to_rgb(cluster_centers_lower[value['lower_cluster']])
+    col1, col2, col3 = st.columns(3)
+    col1.write(f"{i+1}. Occurences: {value['occurences']}")
+    col2.markdown(f"Upper color: {write_color(rgb_upper)}", unsafe_allow_html=True)
+    col3.markdown(f"Lower color: {write_color(rgb_lower)}", unsafe_allow_html=True)
 
 
 def render_page():
   st.title("ENSIMAG AI project")
+  st.header("Clothing color matching")
+  st.write("This is a demo of our clothing color matching app.")
 
-  formCol1, formCol2 = st.columns(2)
-  formCol1.radio("Gender", ["Male", "Female"])
-  formCol2.radio("Number of clothing color clusters", ["20", "40"])
+  # TODO use form to get user input
+  # formCol1, formCol2 = st.columns(2)
+  # formCol1.radio("Gender", ["Male", "Female"])
+  # formCol2.radio("Number of clothing color clusters", ["20", "40"])
 
   file_name = st.file_uploader("Upload a full body image")
 
   with st.container():
     if st.button("Submit"):
-      get_result(file_name, st)
+      with st.spinner('Processing...'):
+        get_result(file_name)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,6708 @@
+{
+    "4,7,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 3,
+        "occurences": 54,
+        "path": "00002809-01_1_front"
+    },
+    "2,12,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 3,
+        "occurences": 70,
+        "path": "00000390-09_1_front"
+    },
+    "1,10,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 8,
+        "occurences": 5,
+        "path": "00007711-03_4_full"
+    },
+    "3,4,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 0,
+        "occurences": 7,
+        "path": "00003393-01_1_front"
+    },
+    "4,8,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 3,
+        "occurences": 29,
+        "path": "00005455-01_4_full"
+    },
+    "4,4,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 3,
+        "occurences": 61,
+        "path": "00007128-02_4_full"
+    },
+    "3,8,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 3,
+        "occurences": 21,
+        "path": "00004523-01_4_full"
+    },
+    "1,0,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 3,
+        "occurences": 114,
+        "path": "00006708-02_4_full"
+    },
+    "2,10,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 3,
+        "occurences": 43,
+        "path": "00005332-06_1_front"
+    },
+    "0,4,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 4,
+        "lower_cluster": 1,
+        "occurences": 3,
+        "path": "00001015-01_4_full"
+    },
+    "2,4,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 10,
+        "occurences": 4,
+        "path": "00000709-02_1_front"
+    },
+    "3,9,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00004638-02_4_full"
+    },
+    "3,3,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 3,
+        "lower_cluster": 1,
+        "occurences": 3,
+        "path": "00005713-01_1_front"
+    },
+    "1,15,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00002603-06_1_front"
+    },
+    "2,15,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00001831-03_4_full"
+    },
+    "1,12,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 13,
+        "occurences": 10,
+        "path": "00005152-10_7_additional"
+    },
+    "4,5,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 17,
+        "occurences": 22,
+        "path": "00004737-01_4_full"
+    },
+    "2,5,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 3,
+        "occurences": 26,
+        "path": "00003510-01_1_front"
+    },
+    "1,7,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 3,
+        "occurences": 75,
+        "path": "00003891-02_4_full"
+    },
+    "2,16,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 3,
+        "occurences": 56,
+        "path": "00007673-02_7_additional"
+    },
+    "3,0,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 3,
+        "occurences": 41,
+        "path": "00002380-01_7_additional"
+    },
+    "4,7,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00003336-10_4_full"
+    },
+    "3,7,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 7,
+        "occurences": 9,
+        "path": "00000393-01_4_full"
+    },
+    "0,8,7": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 7,
+        "occurences": 4,
+        "path": "00001924-01_4_full"
+    },
+    "3,5,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 8,
+        "occurences": 6,
+        "path": "00001097-01_1_front"
+    },
+    "3,12,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 1,
+        "occurences": 7,
+        "path": "00000226-05_1_front"
+    },
+    "1,0,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 13,
+        "occurences": 16,
+        "path": "00002110-17_7_additional"
+    },
+    "2,4,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 0,
+        "occurences": 11,
+        "path": "00003077-01_7_additional"
+    },
+    "4,3,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 3,
+        "occurences": 10,
+        "path": "00001988-08_7_additional"
+    },
+    "2,1,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 19,
+        "occurences": 4,
+        "path": "00006381-02_7_additional"
+    },
+    "1,1,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 6,
+        "occurences": 9,
+        "path": "00002423-04_4_full"
+    },
+    "0,12,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 12,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00005770-01_4_full"
+    },
+    "4,4,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00003297-02_7_additional"
+    },
+    "4,10,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 17,
+        "occurences": 7,
+        "path": "00004649-06_4_full"
+    },
+    "3,12,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 3,
+        "occurences": 20,
+        "path": "00003216-05_7_additional"
+    },
+    "0,10,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 10,
+        "lower_cluster": 3,
+        "occurences": 8,
+        "path": "00003683-05_4_full"
+    },
+    "4,17,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 17,
+        "lower_cluster": 3,
+        "occurences": 9,
+        "path": "00005369-05_1_front"
+    },
+    "2,0,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 3,
+        "occurences": 94,
+        "path": "00006208-09_1_front"
+    },
+    "1,15,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00003148-01_4_full"
+    },
+    "0,0,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 3,
+        "occurences": 13,
+        "path": "00000056-01_7_additional"
+    },
+    "2,4,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 18,
+        "occurences": 11,
+        "path": "00003981-07_4_full"
+    },
+    "1,5,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 3,
+        "occurences": 62,
+        "path": "00005982-01_1_front"
+    },
+    "2,2,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 3,
+        "occurences": 32,
+        "path": "00007170-02_1_front"
+    },
+    "2,19,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 3,
+        "occurences": 38,
+        "path": "00004515-01_4_full"
+    },
+    "2,8,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 3,
+        "occurences": 27,
+        "path": "00006008-01_4_full"
+    },
+    "2,7,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 3,
+        "occurences": 52,
+        "path": "00005735-06_7_additional"
+    },
+    "4,1,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 3,
+        "occurences": 119,
+        "path": "00002685-01_1_front"
+    },
+    "3,9,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 17,
+        "occurences": 3,
+        "path": "00003203-01_1_front"
+    },
+    "4,5,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 3,
+        "occurences": 54,
+        "path": "00001796-02_1_front"
+    },
+    "0,12,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 12,
+        "lower_cluster": 3,
+        "occurences": 9,
+        "path": "00003612-01_1_front"
+    },
+    "1,4,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 17,
+        "occurences": 22,
+        "path": "00003449-04_4_full"
+    },
+    "1,19,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 12,
+        "occurences": 8,
+        "path": "00007440-02_4_full"
+    },
+    "2,9,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 1,
+        "occurences": 4,
+        "path": "00003064-02_4_full"
+    },
+    "3,7,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 3,
+        "occurences": 23,
+        "path": "00001783-02_7_additional"
+    },
+    "3,0,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 1,
+        "occurences": 16,
+        "path": "00007653-01_4_full"
+    },
+    "1,0,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 1,
+        "occurences": 28,
+        "path": "00004627-02_4_full"
+    },
+    "4,10,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 3,
+        "occurences": 23,
+        "path": "00001103-03_1_front"
+    },
+    "0,8,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 3,
+        "occurences": 8,
+        "path": "00004638-05_4_full"
+    },
+    "4,12,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 1,
+        "occurences": 13,
+        "path": "00006233-01_1_front"
+    },
+    "4,13,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 13,
+        "lower_cluster": 3,
+        "occurences": 4,
+        "path": "00000531-02_1_front"
+    },
+    "2,1,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 3,
+        "occurences": 69,
+        "path": "00004113-01_4_full"
+    },
+    "2,12,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 1,
+        "occurences": 8,
+        "path": "00005152-10_1_front"
+    },
+    "0,0,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 0,
+        "occurences": 3,
+        "path": "00005261-01_1_front"
+    },
+    "1,3,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00004784-04_4_full"
+    },
+    "4,0,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 12,
+        "occurences": 6,
+        "path": "00003967-08_4_full"
+    },
+    "1,7,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 16,
+        "occurences": 5,
+        "path": "00005346-01_4_full"
+    },
+    "2,12,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 16,
+        "occurences": 3,
+        "path": "00007583-03_1_front"
+    },
+    "2,17,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 17,
+        "lower_cluster": 3,
+        "occurences": 6,
+        "path": "00001509-03_4_full"
+    },
+    "3,15,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 0,
+        "occurences": 8,
+        "path": "00005548-04_4_full"
+    },
+    "1,10,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 0,
+        "occurences": 16,
+        "path": "00002547-03_4_full"
+    },
+    "2,4,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 3,
+        "occurences": 72,
+        "path": "00006829-03_4_full"
+    },
+    "3,3,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 3,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00000089-08_4_full"
+    },
+    "1,16,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 3,
+        "occurences": 56,
+        "path": "00004998-01_4_full"
+    },
+    "4,15,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 0,
+        "occurences": 6,
+        "path": "00000103-01_1_front"
+    },
+    "2,2,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 13,
+        "occurences": 6,
+        "path": "00003536-03_7_additional"
+    },
+    "4,13,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 13,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00005152-06_4_full"
+    },
+    "1,4,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 12,
+        "occurences": 11,
+        "path": "00006208-08_7_additional"
+    },
+    "2,3,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00006675-13_1_front"
+    },
+    "3,0,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 13,
+        "occurences": 5,
+        "path": "00001021-05_1_front"
+    },
+    "1,0,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 7,
+        "occurences": 5,
+        "path": "00001226-02_1_front"
+    },
+    "3,1,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 3,
+        "occurences": 30,
+        "path": "00005383-02_4_full"
+    },
+    "3,15,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 1,
+        "occurences": 4,
+        "path": "00000697-06_1_front"
+    },
+    "4,0,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 13,
+        "occurences": 10,
+        "path": "00000597-01_4_full"
+    },
+    "1,4,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 8,
+        "occurences": 7,
+        "path": "00002225-02_1_front"
+    },
+    "1,12,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 0,
+        "occurences": 7,
+        "path": "00007073-08_4_full"
+    },
+    "4,12,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 3,
+        "occurences": 34,
+        "path": "00003555-02_4_full"
+    },
+    "3,15,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 3,
+        "occurences": 16,
+        "path": "00003228-12_4_full"
+    },
+    "3,5,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 0,
+        "occurences": 6,
+        "path": "00006864-01_4_full"
+    },
+    "0,11,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 11,
+        "lower_cluster": 3,
+        "occurences": 3,
+        "path": "00001993-01_4_full"
+    },
+    "0,1,7": {
+        "skin_cluster": 0,
+        "upper_cluster": 1,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00000785-01_7_additional"
+    },
+    "1,5,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 17,
+        "occurences": 25,
+        "path": "00006736-01_4_full"
+    },
+    "4,12,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00004117-05_4_full"
+    },
+    "3,0,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 0,
+        "occurences": 8,
+        "path": "00003216-02_7_additional"
+    },
+    "3,15,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 13,
+        "occurences": 4,
+        "path": "00007301-04_4_full"
+    },
+    "1,2,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 3,
+        "occurences": 52,
+        "path": "00001273-05_1_front"
+    },
+    "4,8,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00004675-06_4_full"
+    },
+    "3,3,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 3,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00005713-01_7_additional"
+    },
+    "2,7,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 10,
+        "occurences": 3,
+        "path": "00000112-06_1_front"
+    },
+    "4,19,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 2,
+        "occurences": 3,
+        "path": "00003297-01_7_additional"
+    },
+    "4,7,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 17,
+        "occurences": 11,
+        "path": "00007004-03_4_full"
+    },
+    "3,8,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00004649-05_4_full"
+    },
+    "3,4,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 3,
+        "occurences": 35,
+        "path": "00006093-07_4_full"
+    },
+    "0,6,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 6,
+        "lower_cluster": 3,
+        "occurences": 2,
+        "path": "00000089-05_7_additional"
+    },
+    "1,4,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 6,
+        "occurences": 14,
+        "path": "00002693-04_4_full"
+    },
+    "0,2,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 2,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00007519-01_7_additional"
+    },
+    "2,4,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 17,
+        "occurences": 17,
+        "path": "00007623-01_7_additional"
+    },
+    "0,0,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 1,
+        "occurences": 5,
+        "path": "00005778-01_1_front"
+    },
+    "1,5,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 8,
+        "occurences": 13,
+        "path": "00002313-03_4_full"
+    },
+    "1,1,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 12,
+        "occurences": 15,
+        "path": "00000182-01_7_additional"
+    },
+    "2,5,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 8,
+        "occurences": 8,
+        "path": "00003906-01_1_front"
+    },
+    "2,1,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 8,
+        "occurences": 10,
+        "path": "00002225-01_1_front"
+    },
+    "4,10,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 13,
+        "occurences": 4,
+        "path": "00007553-05_7_additional"
+    },
+    "2,15,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006830-06_7_additional"
+    },
+    "1,0,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 12,
+        "occurences": 15,
+        "path": "00001095-05_1_front"
+    },
+    "3,16,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 3,
+        "occurences": 21,
+        "path": "00000931-02_4_full"
+    },
+    "3,2,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 3,
+        "occurences": 8,
+        "path": "00007066-05_1_front"
+    },
+    "4,17,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 17,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00000702-07_1_front"
+    },
+    "0,19,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 19,
+        "lower_cluster": 3,
+        "occurences": 5,
+        "path": "00001537-01_7_additional"
+    },
+    "1,4,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 3,
+        "occurences": 82,
+        "path": "00006625-04_4_full"
+    },
+    "2,10,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 1,
+        "occurences": 5,
+        "path": "00002874-01_4_full"
+    },
+    "1,5,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 0,
+        "occurences": 20,
+        "path": "00002821-03_4_full"
+    },
+    "3,5,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 3,
+        "occurences": 18,
+        "path": "00000661-01_4_full"
+    },
+    "3,1,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00005887-01_7_additional"
+    },
+    "1,12,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 8,
+        "occurences": 6,
+        "path": "00003470-16_4_full"
+    },
+    "1,2,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 5,
+        "occurences": 4,
+        "path": "00001760-02_7_additional"
+    },
+    "0,0,12": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00000193-07_4_full"
+    },
+    "4,0,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 3,
+        "occurences": 70,
+        "path": "00002948-02_4_full"
+    },
+    "4,10,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 12,
+        "occurences": 3,
+        "path": "00005943-09_4_full"
+    },
+    "2,7,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 7,
+        "occurences": 6,
+        "path": "00005063-01_4_full"
+    },
+    "1,8,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 3,
+        "occurences": 32,
+        "path": "00000387-01_1_front"
+    },
+    "2,8,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 4,
+        "occurences": 3,
+        "path": "00003228-07_4_full"
+    },
+    "3,7,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00004014-02_4_full"
+    },
+    "1,12,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 2,
+        "occurences": 4,
+        "path": "00003470-19_4_full"
+    },
+    "2,19,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 18,
+        "occurences": 4,
+        "path": "00002315-09_1_front"
+    },
+    "2,5,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 1,
+        "occurences": 5,
+        "path": "00001791-03_1_front"
+    },
+    "2,1,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00003083-01_1_front"
+    },
+    "2,2,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00003501-02_1_front"
+    },
+    "3,11,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 11,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00003685-01_4_full"
+    },
+    "0,7,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 7,
+        "lower_cluster": 3,
+        "occurences": 10,
+        "path": "00003725-03_4_full"
+    },
+    "3,3,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 3,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00003228-14_4_full"
+    },
+    "3,1,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 1,
+        "occurences": 9,
+        "path": "00000638-01_4_full"
+    },
+    "4,4,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 0,
+        "occurences": 17,
+        "path": "00005797-01_4_full"
+    },
+    "4,15,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00001184-01_4_full"
+    },
+    "1,2,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 12,
+        "occurences": 4,
+        "path": "00006506-05_1_front"
+    },
+    "1,2,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 0,
+        "occurences": 8,
+        "path": "00002866-07_7_additional"
+    },
+    "2,9,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 3,
+        "occurences": 9,
+        "path": "00007524-01_4_full"
+    },
+    "2,12,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 17,
+        "occurences": 8,
+        "path": "00004798-06_4_full"
+    },
+    "1,1,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 3,
+        "occurences": 119,
+        "path": "00004638-09_4_full"
+    },
+    "2,1,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 1,
+        "occurences": 19,
+        "path": "00003290-01_7_additional"
+    },
+    "1,7,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00005618-01_4_full"
+    },
+    "1,19,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00002810-01_1_front"
+    },
+    "2,0,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 7,
+        "occurences": 6,
+        "path": "00007507-04_4_full"
+    },
+    "1,15,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 13,
+        "occurences": 4,
+        "path": "00003306-03_7_additional"
+    },
+    "1,0,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 17,
+        "occurences": 54,
+        "path": "00003612-13_7_additional"
+    },
+    "4,1,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 17,
+        "occurences": 37,
+        "path": "00005931-01_1_front"
+    },
+    "4,16,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00002233-05_4_full"
+    },
+    "2,1,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 0,
+        "occurences": 9,
+        "path": "00006990-01_4_full"
+    },
+    "3,9,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 3,
+        "occurences": 11,
+        "path": "00005745-02_4_full"
+    },
+    "4,12,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 2,
+        "occurences": 4,
+        "path": "00003853-03_4_full"
+    },
+    "2,16,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 17,
+        "occurences": 6,
+        "path": "00003416-01_4_full"
+    },
+    "3,16,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 18,
+        "occurences": 2,
+        "path": "00001919-13_7_additional"
+    },
+    "2,15,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 0,
+        "occurences": 3,
+        "path": "00002638-08_1_front"
+    },
+    "2,8,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 0,
+        "occurences": 9,
+        "path": "00003398-10_1_front"
+    },
+    "3,1,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 0,
+        "occurences": 4,
+        "path": "00006765-02_7_additional"
+    },
+    "4,11,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 11,
+        "lower_cluster": 3,
+        "occurences": 12,
+        "path": "00001993-01_1_front"
+    },
+    "3,12,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00005207-02_4_full"
+    },
+    "2,7,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 17,
+        "occurences": 5,
+        "path": "00005895-02_1_front"
+    },
+    "0,15,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 15,
+        "lower_cluster": 3,
+        "occurences": 3,
+        "path": "00006812-03_4_full"
+    },
+    "0,4,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 4,
+        "lower_cluster": 3,
+        "occurences": 6,
+        "path": "00007075-01_4_full"
+    },
+    "2,12,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00004391-01_4_full"
+    },
+    "2,16,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 4,
+        "occurences": 5,
+        "path": "00005392-05_1_front"
+    },
+    "4,12,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 13,
+        "occurences": 2,
+        "path": "00005207-01_4_full"
+    },
+    "3,2,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00005876-01_4_full"
+    },
+    "1,5,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 6,
+        "occurences": 12,
+        "path": "00001008-05_1_front"
+    },
+    "1,19,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 3,
+        "occurences": 68,
+        "path": "00004405-02_4_full"
+    },
+    "1,1,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 1,
+        "occurences": 27,
+        "path": "00000671-01_7_additional"
+    },
+    "2,7,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 0,
+        "occurences": 13,
+        "path": "00007875-01_4_full"
+    },
+    "4,5,14": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 14,
+        "occurences": 3,
+        "path": "00001571-10_7_additional"
+    },
+    "4,1,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 1,
+        "occurences": 27,
+        "path": "00001239-06_4_full"
+    },
+    "2,16,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 12,
+        "occurences": 6,
+        "path": "00002162-31_4_full"
+    },
+    "4,15,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 6,
+        "occurences": 3,
+        "path": "00000089-02_7_additional"
+    },
+    "4,2,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 2,
+        "occurences": 3,
+        "path": "00004729-03_4_full"
+    },
+    "4,2,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00007012-05_7_additional"
+    },
+    "2,5,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 17,
+        "occurences": 11,
+        "path": "00007428-01_4_full"
+    },
+    "3,10,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 3,
+        "occurences": 10,
+        "path": "00007233-03_1_front"
+    },
+    "2,10,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 6,
+        "occurences": 8,
+        "path": "00002070-01_4_full"
+    },
+    "1,17,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 17,
+        "lower_cluster": 3,
+        "occurences": 9,
+        "path": "00005159-02_4_full"
+    },
+    "4,0,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 0,
+        "occurences": 13,
+        "path": "00000702-06_1_front"
+    },
+    "3,1,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 8,
+        "occurences": 5,
+        "path": "00004632-01_4_full"
+    },
+    "2,0,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 19,
+        "occurences": 3,
+        "path": "00006366-03_1_front"
+    },
+    "0,3,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 3,
+        "lower_cluster": 17,
+        "occurences": 6,
+        "path": "00002173-04_4_full"
+    },
+    "1,1,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 0,
+        "occurences": 22,
+        "path": "00007025-02_7_additional"
+    },
+    "4,16,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 0,
+        "occurences": 10,
+        "path": "00001584-03_4_full"
+    },
+    "1,1,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 17,
+        "occurences": 36,
+        "path": "00000632-01_4_full"
+    },
+    "3,0,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 17,
+        "occurences": 6,
+        "path": "00000945-01_4_full"
+    },
+    "2,10,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 0,
+        "occurences": 9,
+        "path": "00001811-02_1_front"
+    },
+    "3,16,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00001345-09_4_full"
+    },
+    "2,0,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 18,
+        "occurences": 5,
+        "path": "00004194-01_4_full"
+    },
+    "4,15,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00006344-01_4_full"
+    },
+    "2,13,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 13,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00006692-07_1_front"
+    },
+    "4,2,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 12,
+        "occurences": 3,
+        "path": "00005991-03_1_front"
+    },
+    "0,17,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 17,
+        "lower_cluster": 3,
+        "occurences": 4,
+        "path": "00002898-10_7_additional"
+    },
+    "3,0,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00002578-01_1_front"
+    },
+    "4,9,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 9,
+        "lower_cluster": 0,
+        "occurences": 3,
+        "path": "00000089-03_7_additional"
+    },
+    "1,7,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 0,
+        "occurences": 16,
+        "path": "00004216-01_4_full"
+    },
+    "4,6,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00002433-01_4_full"
+    },
+    "2,4,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 13,
+        "occurences": 12,
+        "path": "00005312-02_1_front"
+    },
+    "1,12,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 1,
+        "occurences": 5,
+        "path": "00003152-04_4_full"
+    },
+    "2,7,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 1,
+        "occurences": 16,
+        "path": "00006053-01_4_full"
+    },
+    "2,3,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00001207-07_4_full"
+    },
+    "0,0,7": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00001055-03_4_full"
+    },
+    "4,15,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00007553-06_1_front"
+    },
+    "4,19,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 1,
+        "occurences": 9,
+        "path": "00001071-06_7_additional"
+    },
+    "3,12,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00000932-01_1_front"
+    },
+    "0,5,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 5,
+        "lower_cluster": 3,
+        "occurences": 5,
+        "path": "00006131-01_4_full"
+    },
+    "0,19,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 19,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00003612-12_1_front"
+    },
+    "1,12,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00006233-01_4_full"
+    },
+    "0,4,7": {
+        "skin_cluster": 0,
+        "upper_cluster": 4,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00006585-06_7_additional"
+    },
+    "4,15,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 3,
+        "occurences": 18,
+        "path": "00004646-04_4_full"
+    },
+    "0,0,4": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 4,
+        "occurences": 2,
+        "path": "00005529-01_4_full"
+    },
+    "1,5,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 18,
+        "occurences": 5,
+        "path": "00004064-01_4_full"
+    },
+    "0,17,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 17,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00005077-01_1_front"
+    },
+    "2,0,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 17,
+        "occurences": 43,
+        "path": "00006571-03_1_front"
+    },
+    "3,8,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 0,
+        "occurences": 4,
+        "path": "00000846-03_4_full"
+    },
+    "0,3,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 3,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00001918-02_1_front"
+    },
+    "4,5,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00007300-01_1_front"
+    },
+    "2,1,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 16,
+        "occurences": 4,
+        "path": "00005411-02_4_full"
+    },
+    "4,5,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00001571-11_7_additional"
+    },
+    "2,2,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 0,
+        "occurences": 8,
+        "path": "00006280-01_4_full"
+    },
+    "2,1,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00005929-02_1_front"
+    },
+    "4,4,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00003336-08_1_front"
+    },
+    "1,3,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00003355-01_1_front"
+    },
+    "1,10,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 13,
+        "occurences": 7,
+        "path": "00003298-05_4_full"
+    },
+    "1,6,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00005566-02_1_front"
+    },
+    "2,9,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00006081-01_4_full"
+    },
+    "1,15,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00000846-06_4_full"
+    },
+    "4,8,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 1,
+        "occurences": 7,
+        "path": "00005994-01_4_full"
+    },
+    "0,0,13": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00000289-02_4_full"
+    },
+    "2,15,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 3,
+        "occurences": 10,
+        "path": "00006150-01_1_front"
+    },
+    "1,1,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 2,
+        "occurences": 20,
+        "path": "00002603-09_1_front"
+    },
+    "2,5,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 6,
+        "occurences": 4,
+        "path": "00003752-01_4_full"
+    },
+    "4,7,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 1,
+        "occurences": 11,
+        "path": "00000006-02_7_additional"
+    },
+    "3,0,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 12,
+        "occurences": 4,
+        "path": "00000694-03_4_full"
+    },
+    "4,5,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 0,
+        "occurences": 10,
+        "path": "00001400-02_4_full"
+    },
+    "0,1,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 1,
+        "lower_cluster": 1,
+        "occurences": 4,
+        "path": "00001611-01_7_additional"
+    },
+    "1,1,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 16,
+        "occurences": 4,
+        "path": "00002163-05_1_front"
+    },
+    "1,4,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 2,
+        "occurences": 4,
+        "path": "00001446-08_4_full"
+    },
+    "4,2,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00007418-02_4_full"
+    },
+    "0,11,12": {
+        "skin_cluster": 0,
+        "upper_cluster": 11,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00002767-09_1_front"
+    },
+    "0,8,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00000168-01_7_additional"
+    },
+    "4,1,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 8,
+        "occurences": 9,
+        "path": "00002603-08_1_front"
+    },
+    "2,12,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00005986-08_1_front"
+    },
+    "3,15,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 17,
+        "occurences": 3,
+        "path": "00007301-01_4_full"
+    },
+    "4,17,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 17,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00000846-01_4_full"
+    },
+    "3,7,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00005021-05_4_full"
+    },
+    "1,16,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 6,
+        "occurences": 3,
+        "path": "00001806-01_4_full"
+    },
+    "4,10,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00002249-06_4_full"
+    },
+    "4,7,4": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00007600-01_4_full"
+    },
+    "4,1,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00004436-02_4_full"
+    },
+    "2,0,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 0,
+        "occurences": 19,
+        "path": "00004802-02_4_full"
+    },
+    "2,6,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 6,
+        "lower_cluster": 3,
+        "occurences": 3,
+        "path": "00000312-01_4_full"
+    },
+    "1,10,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00002249-13_4_full"
+    },
+    "3,19,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 3,
+        "occurences": 8,
+        "path": "00002559-01_4_full"
+    },
+    "4,11,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 11,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00004784-07_4_full"
+    },
+    "4,0,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 17,
+        "occurences": 19,
+        "path": "00001858-03_7_additional"
+    },
+    "1,2,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 13,
+        "occurences": 7,
+        "path": "00006633-02_7_additional"
+    },
+    "4,12,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 16,
+        "occurences": 7,
+        "path": "00005890-06_7_additional"
+    },
+    "4,4,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 13,
+        "occurences": 6,
+        "path": "00001223-01_4_full"
+    },
+    "4,9,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 9,
+        "lower_cluster": 1,
+        "occurences": 6,
+        "path": "00001059-03_4_full"
+    },
+    "1,1,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 8,
+        "occurences": 17,
+        "path": "00003523-21_1_front"
+    },
+    "4,8,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 7,
+        "occurences": 6,
+        "path": "00006335-01_7_additional"
+    },
+    "1,15,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 2,
+        "occurences": 3,
+        "path": "00006790-09_1_front"
+    },
+    "3,19,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 0,
+        "occurences": 3,
+        "path": "00006652-03_7_additional"
+    },
+    "3,9,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 1,
+        "occurences": 4,
+        "path": "00005910-02_4_full"
+    },
+    "0,15,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 15,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00006030-01_4_full"
+    },
+    "3,7,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 1,
+        "occurences": 7,
+        "path": "00004638-06_4_full"
+    },
+    "2,4,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 7,
+        "occurences": 7,
+        "path": "00003600-01_4_full"
+    },
+    "2,15,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00003009-09_4_full"
+    },
+    "2,0,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 13,
+        "occurences": 17,
+        "path": "00003117-01_1_front"
+    },
+    "4,10,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00006470-04_4_full"
+    },
+    "2,7,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 6,
+        "occurences": 5,
+        "path": "00000220-01_1_front"
+    },
+    "1,17,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 17,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00007930-01_1_front"
+    },
+    "3,1,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 17,
+        "occurences": 11,
+        "path": "00005569-02_4_full"
+    },
+    "2,15,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00000143-02_4_full"
+    },
+    "4,15,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 17,
+        "occurences": 3,
+        "path": "00000396-01_1_front"
+    },
+    "1,17,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 17,
+        "lower_cluster": 1,
+        "occurences": 3,
+        "path": "00006039-02_7_additional"
+    },
+    "2,12,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 0,
+        "occurences": 11,
+        "path": "00007439-01_4_full"
+    },
+    "1,15,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00006621-01_4_full"
+    },
+    "0,16,9": {
+        "skin_cluster": 0,
+        "upper_cluster": 16,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00004131-03_4_full"
+    },
+    "0,16,13": {
+        "skin_cluster": 0,
+        "upper_cluster": 16,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00001763-01_1_front"
+    },
+    "2,8,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 1,
+        "occurences": 7,
+        "path": "00000615-01_1_front"
+    },
+    "2,4,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00002316-01_1_front"
+    },
+    "2,16,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00005716-07_4_full"
+    },
+    "4,15,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 1,
+        "occurences": 4,
+        "path": "00001291-01_7_additional"
+    },
+    "3,2,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00002028-01_7_additional"
+    },
+    "1,19,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 0,
+        "occurences": 11,
+        "path": "00003590-03_1_front"
+    },
+    "4,5,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 8,
+        "occurences": 14,
+        "path": "00000783-01_7_additional"
+    },
+    "0,12,6": {
+        "skin_cluster": 0,
+        "upper_cluster": 12,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00001955-01_7_additional"
+    },
+    "4,16,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 3,
+        "occurences": 39,
+        "path": "00002705-01_1_front"
+    },
+    "3,12,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 18,
+        "occurences": 4,
+        "path": "00004117-09_4_full"
+    },
+    "2,4,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 1,
+        "occurences": 12,
+        "path": "00005917-01_4_full"
+    },
+    "2,7,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00003531-05_1_front"
+    },
+    "0,2,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 2,
+        "lower_cluster": 3,
+        "occurences": 4,
+        "path": "00002234-09_4_full"
+    },
+    "4,10,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00000168-02_4_full"
+    },
+    "1,0,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 0,
+        "occurences": 19,
+        "path": "00000867-01_1_front"
+    },
+    "3,4,16": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 16,
+        "occurences": 5,
+        "path": "00006116-01_7_additional"
+    },
+    "1,15,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 3,
+        "occurences": 16,
+        "path": "00002581-05_4_full"
+    },
+    "2,0,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 1,
+        "occurences": 21,
+        "path": "00006702-07_7_additional"
+    },
+    "3,5,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00004117-06_4_full"
+    },
+    "1,10,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 3,
+        "occurences": 53,
+        "path": "00006063-02_1_front"
+    },
+    "4,1,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 19,
+        "occurences": 6,
+        "path": "00007662-05_1_front"
+    },
+    "3,17,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 3,
+        "occurences": 10,
+        "path": "00007048-03_4_full"
+    },
+    "1,12,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 3,
+        "occurences": 41,
+        "path": "00000506-03_7_additional"
+    },
+    "2,0,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 12,
+        "occurences": 13,
+        "path": "00005229-03_1_front"
+    },
+    "1,9,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00000047-01_4_full"
+    },
+    "1,17,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 17,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00002638-08_7_additional"
+    },
+    "0,9,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 9,
+        "lower_cluster": 3,
+        "occurences": 6,
+        "path": "00002234-03_4_full"
+    },
+    "1,11,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 11,
+        "lower_cluster": 3,
+        "occurences": 9,
+        "path": "00005074-03_4_full"
+    },
+    "3,12,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00000511-01_7_additional"
+    },
+    "3,10,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00004051-01_4_full"
+    },
+    "1,14,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 14,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00005913-19_4_full"
+    },
+    "4,8,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00006820-06_4_full"
+    },
+    "2,15,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00005955-13_1_front"
+    },
+    "4,5,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00002638-03_7_additional"
+    },
+    "4,19,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 3,
+        "occurences": 42,
+        "path": "00006903-01_4_full"
+    },
+    "3,4,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 1,
+        "occurences": 8,
+        "path": "00000638-03_4_full"
+    },
+    "4,12,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 0,
+        "occurences": 8,
+        "path": "00005751-01_4_full"
+    },
+    "2,2,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00006837-03_7_additional"
+    },
+    "2,1,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 17,
+        "occurences": 14,
+        "path": "00005331-01_7_additional"
+    },
+    "2,12,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00000084-08_4_full"
+    },
+    "3,10,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 0,
+        "occurences": 5,
+        "path": "00002818-01_1_front"
+    },
+    "4,19,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 17,
+        "occurences": 9,
+        "path": "00001350-01_4_full"
+    },
+    "3,7,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 0,
+        "occurences": 4,
+        "path": "00005685-03_1_front"
+    },
+    "3,7,9": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 9,
+        "occurences": 3,
+        "path": "00001774-28_4_full"
+    },
+    "0,15,6": {
+        "skin_cluster": 0,
+        "upper_cluster": 15,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00000716-07_4_full"
+    },
+    "2,12,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 6,
+        "occurences": 7,
+        "path": "00006807-01_4_full"
+    },
+    "1,7,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00007279-04_4_full"
+    },
+    "1,9,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00005910-04_4_full"
+    },
+    "4,16,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00007739-01_4_full"
+    },
+    "3,13,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 13,
+        "lower_cluster": 3,
+        "occurences": 3,
+        "path": "00001859-01_1_front"
+    },
+    "3,19,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00004117-12_4_full"
+    },
+    "4,7,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00004066-02_4_full"
+    },
+    "0,12,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 12,
+        "lower_cluster": 0,
+        "occurences": 4,
+        "path": "00006106-01_7_additional"
+    },
+    "2,9,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 17,
+        "occurences": 6,
+        "path": "00006535-02_1_front"
+    },
+    "4,19,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00005671-02_1_front"
+    },
+    "0,1,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 1,
+        "lower_cluster": 3,
+        "occurences": 3,
+        "path": "00006077-01_4_full"
+    },
+    "4,18,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 18,
+        "lower_cluster": 3,
+        "occurences": 4,
+        "path": "00004731-06_4_full"
+    },
+    "4,15,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00000193-08_1_front"
+    },
+    "2,1,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00005593-03_7_additional"
+    },
+    "3,12,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 0,
+        "occurences": 5,
+        "path": "00000859-01_1_front"
+    },
+    "0,5,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 5,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00007040-01_4_full"
+    },
+    "1,6,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00002310-09_4_full"
+    },
+    "1,12,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00003132-03_4_full"
+    },
+    "3,7,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 17,
+        "occurences": 3,
+        "path": "00001595-01_1_front"
+    },
+    "2,8,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00006236-02_4_full"
+    },
+    "4,2,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00007502-06_4_full"
+    },
+    "4,10,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 0,
+        "occurences": 10,
+        "path": "00004729-02_4_full"
+    },
+    "0,13,13": {
+        "skin_cluster": 0,
+        "upper_cluster": 13,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00000955-01_1_front"
+    },
+    "1,10,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 18,
+        "occurences": 2,
+        "path": "00001088-01_1_front"
+    },
+    "0,6,2": {
+        "skin_cluster": 0,
+        "upper_cluster": 6,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00003336-08_6_flat"
+    },
+    "3,11,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 11,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00000089-15_4_full"
+    },
+    "4,6,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00004332-01_4_full"
+    },
+    "4,19,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00003080-02_1_front"
+    },
+    "4,12,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00007224-03_4_full"
+    },
+    "0,15,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 15,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00001679-02_7_additional"
+    },
+    "0,0,19": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00002241-01_4_full"
+    },
+    "4,5,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 2,
+        "occurences": 6,
+        "path": "00007807-06_7_additional"
+    },
+    "1,15,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00000193-08_7_additional"
+    },
+    "1,15,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00005955-15_1_front"
+    },
+    "4,4,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 12,
+        "occurences": 10,
+        "path": "00006317-08_7_additional"
+    },
+    "4,4,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 1,
+        "occurences": 7,
+        "path": "00006718-01_4_full"
+    },
+    "4,6,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00004713-01_4_full"
+    },
+    "4,0,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 1,
+        "occurences": 19,
+        "path": "00005181-06_4_full"
+    },
+    "1,9,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 3,
+        "occurences": 7,
+        "path": "00002006-08_7_additional"
+    },
+    "3,6,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 6,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00003233-03_7_additional"
+    },
+    "2,19,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00002638-09_1_front"
+    },
+    "1,3,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006203-02_1_front"
+    },
+    "4,7,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00007073-07_7_additional"
+    },
+    "4,6,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00007917-01_1_front"
+    },
+    "3,19,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00002243-01_4_full"
+    },
+    "2,4,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 6,
+        "occurences": 7,
+        "path": "00005559-03_7_additional"
+    },
+    "0,5,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 5,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00006325-01_4_full"
+    },
+    "3,5,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 17,
+        "occurences": 7,
+        "path": "00002878-02_7_additional"
+    },
+    "2,16,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 1,
+        "occurences": 6,
+        "path": "00003505-02_1_front"
+    },
+    "1,1,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 18,
+        "occurences": 4,
+        "path": "00000209-02_1_front"
+    },
+    "0,7,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 7,
+        "lower_cluster": 0,
+        "occurences": 4,
+        "path": "00003980-01_4_full"
+    },
+    "0,4,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 4,
+        "lower_cluster": 0,
+        "occurences": 3,
+        "path": "00005939-01_7_additional"
+    },
+    "3,17,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00006912-09_4_full"
+    },
+    "0,1,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 1,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00007228-01_4_full"
+    },
+    "4,1,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 0,
+        "occurences": 20,
+        "path": "00001137-01_4_full"
+    },
+    "3,18,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 18,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00003128-01_1_front"
+    },
+    "1,16,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00006217-03_1_front"
+    },
+    "0,12,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 12,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00000527-01_7_additional"
+    },
+    "3,8,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00006335-01_1_front"
+    },
+    "3,15,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00004638-01_4_full"
+    },
+    "4,10,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00006959-01_1_front"
+    },
+    "4,12,11": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00001774-25_4_full"
+    },
+    "4,4,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00003470-07_4_full"
+    },
+    "3,17,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00003228-23_4_full"
+    },
+    "4,9,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 9,
+        "lower_cluster": 3,
+        "occurences": 13,
+        "path": "00002663-01_1_front"
+    },
+    "1,16,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 0,
+        "occurences": 13,
+        "path": "00001393-02_4_full"
+    },
+    "2,0,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 4,
+        "occurences": 4,
+        "path": "00001233-03_4_full"
+    },
+    "1,16,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00002162-36_4_full"
+    },
+    "1,16,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 9,
+        "occurences": 3,
+        "path": "00002107-02_7_additional"
+    },
+    "0,8,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 1,
+        "occurences": 3,
+        "path": "00006382-01_7_additional"
+    },
+    "1,16,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 1,
+        "occurences": 10,
+        "path": "00005602-01_1_front"
+    },
+    "1,10,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 6,
+        "occurences": 6,
+        "path": "00007502-04_4_full"
+    },
+    "1,6,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 1,
+        "occurences": 5,
+        "path": "00006039-06_7_additional"
+    },
+    "0,2,2": {
+        "skin_cluster": 0,
+        "upper_cluster": 2,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00003616-02_1_front"
+    },
+    "1,10,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 1,
+        "occurences": 8,
+        "path": "00002220-05_4_full"
+    },
+    "2,15,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00006688-10_4_full"
+    },
+    "4,7,11": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00006507-01_7_additional"
+    },
+    "2,16,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 13,
+        "occurences": 5,
+        "path": "00007768-02_7_additional"
+    },
+    "1,19,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 2,
+        "occurences": 5,
+        "path": "00006882-02_4_full"
+    },
+    "4,4,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 17,
+        "occurences": 19,
+        "path": "00000223-01_4_full"
+    },
+    "2,12,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 12,
+        "occurences": 6,
+        "path": "00005219-03_7_additional"
+    },
+    "0,16,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 16,
+        "lower_cluster": 3,
+        "occurences": 3,
+        "path": "00001919-09_7_additional"
+    },
+    "2,1,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 12,
+        "occurences": 4,
+        "path": "00000123-06_7_additional"
+    },
+    "1,5,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 19,
+        "occurences": 3,
+        "path": "00005799-08_4_full"
+    },
+    "1,8,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 1,
+        "occurences": 5,
+        "path": "00004413-02_4_full"
+    },
+    "0,4,6": {
+        "skin_cluster": 0,
+        "upper_cluster": 4,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00001808-06_1_front"
+    },
+    "4,2,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00002151-07_4_full"
+    },
+    "4,1,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 2,
+        "occurences": 11,
+        "path": "00000089-01_7_additional"
+    },
+    "3,4,10": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00003523-61_7_additional"
+    },
+    "1,13,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 13,
+        "lower_cluster": 3,
+        "occurences": 3,
+        "path": "00001108-03_4_full"
+    },
+    "4,4,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00007420-02_4_full"
+    },
+    "1,4,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 13,
+        "occurences": 8,
+        "path": "00003736-07_4_full"
+    },
+    "1,19,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 13,
+        "occurences": 5,
+        "path": "00006566-08_1_front"
+    },
+    "3,10,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00005986-03_4_full"
+    },
+    "1,8,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00001578-08_7_additional"
+    },
+    "1,4,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 0,
+        "occurences": 20,
+        "path": "00007366-03_7_additional"
+    },
+    "3,16,9": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00001021-06_4_full"
+    },
+    "0,0,8": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00002710-01_1_front"
+    },
+    "1,7,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 6,
+        "occurences": 6,
+        "path": "00003317-02_4_full"
+    },
+    "3,10,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00001774-06_4_full"
+    },
+    "1,19,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00001948-02_4_full"
+    },
+    "0,12,8": {
+        "skin_cluster": 0,
+        "upper_cluster": 12,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00001332-01_4_full"
+    },
+    "3,6,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 6,
+        "lower_cluster": 3,
+        "occurences": 2,
+        "path": "00000270-01_4_full"
+    },
+    "2,1,14": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 14,
+        "occurences": 1,
+        "path": "00002826-05_4_full"
+    },
+    "1,4,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 1,
+        "occurences": 13,
+        "path": "00007702-03_7_additional"
+    },
+    "3,5,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 1,
+        "occurences": 4,
+        "path": "00000638-02_4_full"
+    },
+    "4,2,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 3,
+        "occurences": 26,
+        "path": "00002735-01_1_front"
+    },
+    "3,7,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 12,
+        "occurences": 4,
+        "path": "00007937-01_1_front"
+    },
+    "4,1,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 13,
+        "occurences": 6,
+        "path": "00002638-03_1_front"
+    },
+    "2,19,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 0,
+        "occurences": 5,
+        "path": "00000888-05_7_additional"
+    },
+    "4,12,9": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00003470-11_4_full"
+    },
+    "2,8,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 7,
+        "occurences": 5,
+        "path": "00005895-02_7_additional"
+    },
+    "4,19,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 18,
+        "occurences": 4,
+        "path": "00006912-08_7_additional"
+    },
+    "3,13,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 13,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00004046-01_4_full"
+    },
+    "3,10,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00007012-03_4_full"
+    },
+    "3,4,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 17,
+        "occurences": 6,
+        "path": "00007476-03_4_full"
+    },
+    "4,3,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 17,
+        "occurences": 3,
+        "path": "00001723-05_1_front"
+    },
+    "4,1,4": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 4,
+        "occurences": 2,
+        "path": "00007246-05_4_full"
+    },
+    "0,15,12": {
+        "skin_cluster": 0,
+        "upper_cluster": 15,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00004530-18_4_full"
+    },
+    "3,17,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 0,
+        "occurences": 3,
+        "path": "00005697-01_4_full"
+    },
+    "2,12,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00000112-05_1_front"
+    },
+    "1,2,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 10,
+        "occurences": 3,
+        "path": "00005023-04_4_full"
+    },
+    "1,5,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 1,
+        "occurences": 12,
+        "path": "00002377-03_1_front"
+    },
+    "3,12,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00000294-01_4_full"
+    },
+    "2,10,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 13,
+        "occurences": 7,
+        "path": "00005263-13_1_front"
+    },
+    "3,5,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00002638-05_7_additional"
+    },
+    "4,8,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00003470-15_4_full"
+    },
+    "2,9,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00003009-01_4_full"
+    },
+    "4,3,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 1,
+        "occurences": 3,
+        "path": "00000911-01_4_full"
+    },
+    "3,8,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00001222-04_4_full"
+    },
+    "4,7,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 0,
+        "occurences": 8,
+        "path": "00006035-01_4_full"
+    },
+    "0,3,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 3,
+        "lower_cluster": 3,
+        "occurences": 2,
+        "path": "00004292-07_4_full"
+    },
+    "1,9,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00005910-03_4_full"
+    },
+    "3,9,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00003228-13_4_full"
+    },
+    "1,15,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00000712-02_4_full"
+    },
+    "3,17,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00002605-01_4_full"
+    },
+    "4,2,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 17,
+        "occurences": 7,
+        "path": "00001276-01_4_full"
+    },
+    "2,0,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 6,
+        "occurences": 6,
+        "path": "00000321-01_4_full"
+    },
+    "0,15,13": {
+        "skin_cluster": 0,
+        "upper_cluster": 15,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00004987-01_4_full"
+    },
+    "2,7,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00006727-06_4_full"
+    },
+    "3,8,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00002260-01_4_full"
+    },
+    "2,5,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 2,
+        "occurences": 4,
+        "path": "00004593-04_4_full"
+    },
+    "0,9,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 9,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00001679-02_1_front"
+    },
+    "4,12,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00003219-03_1_front"
+    },
+    "1,7,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 1,
+        "occurences": 13,
+        "path": "00000615-01_7_additional"
+    },
+    "1,19,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 6,
+        "occurences": 6,
+        "path": "00007026-05_4_full"
+    },
+    "0,13,3": {
+        "skin_cluster": 0,
+        "upper_cluster": 13,
+        "lower_cluster": 3,
+        "occurences": 1,
+        "path": "00000531-02_7_additional"
+    },
+    "0,5,6": {
+        "skin_cluster": 0,
+        "upper_cluster": 5,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00006383-02_4_full"
+    },
+    "0,9,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 9,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00003125-08_7_additional"
+    },
+    "1,10,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00007015-04_4_full"
+    },
+    "0,15,9": {
+        "skin_cluster": 0,
+        "upper_cluster": 15,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00004372-02_4_full"
+    },
+    "3,6,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 6,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00003310-02_1_front"
+    },
+    "4,16,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00001919-13_1_front"
+    },
+    "4,16,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 17,
+        "occurences": 8,
+        "path": "00005013-01_4_full"
+    },
+    "1,19,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00003379-04_4_full"
+    },
+    "1,8,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 0,
+        "occurences": 8,
+        "path": "00004755-02_4_full"
+    },
+    "0,1,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 1,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00004305-02_4_full"
+    },
+    "4,1,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 6,
+        "occurences": 4,
+        "path": "00007723-10_7_additional"
+    },
+    "1,9,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 17,
+        "occurences": 8,
+        "path": "00004062-02_4_full"
+    },
+    "3,12,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00003470-20_4_full"
+    },
+    "2,19,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 13,
+        "occurences": 8,
+        "path": "00002932-01_4_full"
+    },
+    "4,0,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00000936-08_4_full"
+    },
+    "4,2,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 1,
+        "occurences": 6,
+        "path": "00004909-02_4_full"
+    },
+    "2,8,14": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 14,
+        "occurences": 1,
+        "path": "00000319-01_4_full"
+    },
+    "3,5,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00007224-06_4_full"
+    },
+    "4,17,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 17,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00000597-02_4_full"
+    },
+    "1,0,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 6,
+        "occurences": 14,
+        "path": "00003913-03_1_front"
+    },
+    "3,18,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 18,
+        "lower_cluster": 3,
+        "occurences": 1,
+        "path": "00005609-06_1_front"
+    },
+    "3,9,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00003600-03_4_full"
+    },
+    "1,5,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00003853-06_4_full"
+    },
+    "3,19,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00001345-06_4_full"
+    },
+    "3,15,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00001571-05_4_full"
+    },
+    "2,4,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 12,
+        "occurences": 7,
+        "path": "00004707-06_4_full"
+    },
+    "0,19,12": {
+        "skin_cluster": 0,
+        "upper_cluster": 19,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00003537-02_1_front"
+    },
+    "3,4,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 13,
+        "occurences": 4,
+        "path": "00006585-04_4_full"
+    },
+    "2,11,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 11,
+        "lower_cluster": 3,
+        "occurences": 9,
+        "path": "00007865-01_7_additional"
+    },
+    "2,2,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 17,
+        "occurences": 5,
+        "path": "00007503-03_1_front"
+    },
+    "4,15,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00002310-04_4_full"
+    },
+    "4,9,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 9,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00006957-01_4_full"
+    },
+    "3,10,10": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00002714-01_4_full"
+    },
+    "0,3,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 3,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00005077-01_7_additional"
+    },
+    "2,6,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 6,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00000146-02_4_full"
+    },
+    "1,10,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00003858-06_1_front"
+    },
+    "4,7,9": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00003470-13_4_full"
+    },
+    "2,16,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00006688-09_7_additional"
+    },
+    "3,7,10": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00004014-03_4_full"
+    },
+    "4,1,9": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00007982-11_7_additional"
+    },
+    "3,17,13": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00000846-04_4_full"
+    },
+    "2,5,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 0,
+        "occurences": 4,
+        "path": "00003123-05_7_additional"
+    },
+    "4,0,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 6,
+        "occurences": 5,
+        "path": "00003470-04_4_full"
+    },
+    "2,17,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 17,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00001207-05_4_full"
+    },
+    "4,5,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 12,
+        "occurences": 4,
+        "path": "00004652-02_4_full"
+    },
+    "2,1,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 4,
+        "occurences": 3,
+        "path": "00002162-70_7_additional"
+    },
+    "4,13,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 13,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00003257-05_7_additional"
+    },
+    "1,15,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 17,
+        "occurences": 5,
+        "path": "00007466-09_4_full"
+    },
+    "4,7,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00005021-05_1_front"
+    },
+    "4,15,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00005969-01_4_full"
+    },
+    "1,0,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 4,
+        "occurences": 5,
+        "path": "00006863-13_4_full"
+    },
+    "4,1,11": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 11,
+        "occurences": 3,
+        "path": "00005643-02_4_full"
+    },
+    "2,19,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00003930-06_1_front"
+    },
+    "1,0,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 8,
+        "occurences": 12,
+        "path": "00005807-02_4_full"
+    },
+    "2,18,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 18,
+        "lower_cluster": 3,
+        "occurences": 4,
+        "path": "00006072-03_1_front"
+    },
+    "2,1,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 13,
+        "occurences": 2,
+        "path": "00007245-01_4_full"
+    },
+    "1,10,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 2,
+        "occurences": 6,
+        "path": "00003660-07_1_front"
+    },
+    "1,1,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 9,
+        "occurences": 7,
+        "path": "00007023-04_4_full"
+    },
+    "4,19,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00003590-02_7_additional"
+    },
+    "2,19,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 17,
+        "occurences": 5,
+        "path": "00007268-02_4_full"
+    },
+    "4,16,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 1,
+        "occurences": 8,
+        "path": "00004689-04_4_full"
+    },
+    "4,7,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00005891-02_4_full"
+    },
+    "1,1,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00002406-01_4_full"
+    },
+    "2,13,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 13,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00005017-40_4_full"
+    },
+    "1,9,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00002479-02_4_full"
+    },
+    "4,0,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 19,
+        "occurences": 3,
+        "path": "00001557-04_4_full"
+    },
+    "1,0,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 18,
+        "occurences": 8,
+        "path": "00005761-05_4_full"
+    },
+    "4,14,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 14,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00005913-16_1_front"
+    },
+    "1,16,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 17,
+        "occurences": 12,
+        "path": "00003686-03_1_front"
+    },
+    "3,4,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 6,
+        "occurences": 3,
+        "path": "00001807-02_4_full"
+    },
+    "1,10,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 17,
+        "occurences": 5,
+        "path": "00005107-02_7_additional"
+    },
+    "2,2,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00003628-01_1_front"
+    },
+    "2,1,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 6,
+        "occurences": 4,
+        "path": "00006657-06_7_additional"
+    },
+    "1,5,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 2,
+        "occurences": 6,
+        "path": "00002308-03_4_full"
+    },
+    "1,2,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 4,
+        "occurences": 4,
+        "path": "00007721-35_4_full"
+    },
+    "1,0,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 5,
+        "occurences": 8,
+        "path": "00005610-02_4_full"
+    },
+    "4,19,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 6,
+        "occurences": 5,
+        "path": "00004910-02_4_full"
+    },
+    "4,3,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00002522-02_7_additional"
+    },
+    "2,12,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00000619-08_7_additional"
+    },
+    "3,0,11": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00007961-07_1_front"
+    },
+    "1,4,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 10,
+        "occurences": 3,
+        "path": "00002867-07_4_full"
+    },
+    "4,1,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00000397-03_1_front"
+    },
+    "1,2,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 8,
+        "occurences": 4,
+        "path": "00003536-03_1_front"
+    },
+    "2,0,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 9,
+        "occurences": 4,
+        "path": "00001981-03_7_additional"
+    },
+    "2,10,11": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00006602-10_4_full"
+    },
+    "2,4,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00003662-01_4_full"
+    },
+    "2,0,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 8,
+        "occurences": 8,
+        "path": "00000199-02_7_additional"
+    },
+    "3,16,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00003943-03_4_full"
+    },
+    "1,7,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 17,
+        "occurences": 10,
+        "path": "00001957-02_4_full"
+    },
+    "2,10,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00001367-05_1_front"
+    },
+    "4,0,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 8,
+        "occurences": 6,
+        "path": "00004921-03_4_full"
+    },
+    "3,2,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00001637-02_1_front"
+    },
+    "1,0,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 2,
+        "occurences": 6,
+        "path": "00001801-05_4_full"
+    },
+    "4,5,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 6,
+        "occurences": 3,
+        "path": "00000263-02_4_full"
+    },
+    "2,0,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00001052-07_1_front"
+    },
+    "1,2,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 1,
+        "occurences": 6,
+        "path": "00006510-02_7_additional"
+    },
+    "2,0,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 10,
+        "occurences": 3,
+        "path": "00007375-02_1_front"
+    },
+    "0,12,12": {
+        "skin_cluster": 0,
+        "upper_cluster": 12,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00000336-02_1_front"
+    },
+    "4,2,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00006847-03_4_full"
+    },
+    "2,19,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 4,
+        "occurences": 2,
+        "path": "00001071-09_1_front"
+    },
+    "4,2,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 0,
+        "occurences": 5,
+        "path": "00007175-07_4_full"
+    },
+    "2,12,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 19,
+        "occurences": 5,
+        "path": "00007271-03_7_additional"
+    },
+    "2,19,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00002561-09_7_additional"
+    },
+    "2,15,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00003775-01_4_full"
+    },
+    "1,9,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00006905-04_4_full"
+    },
+    "1,0,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 10,
+        "occurences": 7,
+        "path": "00005610-03_1_front"
+    },
+    "1,10,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00007333-01_7_additional"
+    },
+    "1,8,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00007032-06_1_front"
+    },
+    "1,3,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 3,
+        "occurences": 9,
+        "path": "00007057-01_4_full"
+    },
+    "0,6,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 6,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00006773-02_7_additional"
+    },
+    "1,8,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 7,
+        "occurences": 4,
+        "path": "00001592-08_4_full"
+    },
+    "2,17,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 17,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00000322-05_1_front"
+    },
+    "4,6,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 1,
+        "occurences": 4,
+        "path": "00003310-02_7_additional"
+    },
+    "2,0,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006191-03_4_full"
+    },
+    "1,4,14": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 14,
+        "occurences": 2,
+        "path": "00002162-61_4_full"
+    },
+    "3,18,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 18,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00003971-06_7_additional"
+    },
+    "2,10,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 19,
+        "occurences": 3,
+        "path": "00002121-27_1_front"
+    },
+    "1,4,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00002579-01_7_additional"
+    },
+    "4,10,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00007012-05_4_full"
+    },
+    "2,4,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 19,
+        "occurences": 4,
+        "path": "00000376-06_4_full"
+    },
+    "4,1,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 10,
+        "occurences": 4,
+        "path": "00006016-02_1_front"
+    },
+    "1,5,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 12,
+        "occurences": 3,
+        "path": "00007372-02_4_full"
+    },
+    "4,12,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 6,
+        "occurences": 5,
+        "path": "00005332-05_1_front"
+    },
+    "1,17,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 17,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00002048-02_4_full"
+    },
+    "4,8,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 6,
+        "occurences": 4,
+        "path": "00005775-02_4_full"
+    },
+    "1,9,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00001660-08_4_full"
+    },
+    "1,19,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 1,
+        "occurences": 10,
+        "path": "00006595-02_1_front"
+    },
+    "2,16,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00003523-53_4_full"
+    },
+    "4,5,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 1,
+        "occurences": 5,
+        "path": "00005376-02_4_full"
+    },
+    "4,0,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00002219-02_4_full"
+    },
+    "2,13,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 13,
+        "lower_cluster": 3,
+        "occurences": 6,
+        "path": "00001108-03_1_front"
+    },
+    "1,2,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 17,
+        "occurences": 5,
+        "path": "00004546-01_4_full"
+    },
+    "2,12,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 4,
+        "occurences": 2,
+        "path": "00002089-10_1_front"
+    },
+    "2,15,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00005913-03_1_front"
+    },
+    "2,15,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 1,
+        "occurences": 3,
+        "path": "00006692-06_1_front"
+    },
+    "1,12,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00002162-70_1_front"
+    },
+    "1,12,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00000947-02_4_full"
+    },
+    "1,0,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 9,
+        "occurences": 4,
+        "path": "00001071-10_4_full"
+    },
+    "2,2,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 1,
+        "occurences": 8,
+        "path": "00003681-05_4_full"
+    },
+    "3,17,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00003220-07_1_front"
+    },
+    "1,18,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 18,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00003100-06_1_front"
+    },
+    "2,8,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00006206-03_7_additional"
+    },
+    "0,8,19": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00001277-03_4_full"
+    },
+    "3,3,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 3,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00001756-03_4_full"
+    },
+    "2,12,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00005296-01_7_additional"
+    },
+    "4,0,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00007406-08_4_full"
+    },
+    "3,19,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00001273-05_4_full"
+    },
+    "2,3,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00002715-01_4_full"
+    },
+    "3,12,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 12,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00004903-02_4_full"
+    },
+    "1,0,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 11,
+        "occurences": 5,
+        "path": "00005085-29_4_full"
+    },
+    "1,8,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 6,
+        "occurences": 4,
+        "path": "00001073-01_4_full"
+    },
+    "1,19,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00006546-09_4_full"
+    },
+    "4,16,9": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00002201-15_7_additional"
+    },
+    "1,11,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 11,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00003971-05_7_additional"
+    },
+    "1,11,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 11,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00001548-06_4_full"
+    },
+    "3,1,16": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00002583-03_7_additional"
+    },
+    "4,12,4": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00001249-03_4_full"
+    },
+    "2,0,11": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00000771-03_4_full"
+    },
+    "4,15,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 15,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00005268-06_4_full"
+    },
+    "1,2,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00004090-01_4_full"
+    },
+    "2,19,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00001530-01_4_full"
+    },
+    "2,1,11": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00002826-04_4_full"
+    },
+    "1,6,0": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00005951-02_1_front"
+    },
+    "1,6,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 3,
+        "occurences": 8,
+        "path": "00003630-02_1_front"
+    },
+    "2,8,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 17,
+        "occurences": 5,
+        "path": "00000387-02_7_additional"
+    },
+    "1,19,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 17,
+        "occurences": 11,
+        "path": "00005815-05_4_full"
+    },
+    "1,10,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00006602-11_4_full"
+    },
+    "1,6,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00006330-02_7_additional"
+    },
+    "2,9,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 6,
+        "occurences": 3,
+        "path": "00001195-02_4_full"
+    },
+    "4,14,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 14,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00000344-07_4_full"
+    },
+    "3,0,9": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00001515-06_7_additional"
+    },
+    "1,4,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00002162-62_4_full"
+    },
+    "2,5,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 13,
+        "occurences": 4,
+        "path": "00006982-08_4_full"
+    },
+    "2,11,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 11,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00005913-17_1_front"
+    },
+    "2,16,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 0,
+        "occurences": 9,
+        "path": "00002971-01_1_front"
+    },
+    "1,4,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00002162-33_4_full"
+    },
+    "2,9,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 13,
+        "occurences": 2,
+        "path": "00001533-01_1_front"
+    },
+    "4,7,15": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00003523-14_4_full"
+    },
+    "1,0,15": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 15,
+        "occurences": 3,
+        "path": "00001212-24_4_full"
+    },
+    "4,1,15": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 15,
+        "occurences": 2,
+        "path": "00004593-14_4_full"
+    },
+    "1,1,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 10,
+        "occurences": 5,
+        "path": "00006581-12_4_full"
+    },
+    "2,1,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 10,
+        "occurences": 3,
+        "path": "00002223-07_1_front"
+    },
+    "4,12,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 17,
+        "occurences": 4,
+        "path": "00005930-01_7_additional"
+    },
+    "2,3,3": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 3,
+        "occurences": 1,
+        "path": "00001747-02_4_full"
+    },
+    "1,15,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00001058-03_4_full"
+    },
+    "3,8,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00005099-06_7_additional"
+    },
+    "0,10,12": {
+        "skin_cluster": 0,
+        "upper_cluster": 10,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00000336-02_7_additional"
+    },
+    "4,5,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00000230-01_4_full"
+    },
+    "4,16,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00000509-03_1_front"
+    },
+    "0,4,19": {
+        "skin_cluster": 0,
+        "upper_cluster": 4,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00005258-04_4_full"
+    },
+    "4,19,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00007889-02_7_additional"
+    },
+    "3,5,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00003374-02_4_full"
+    },
+    "2,7,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00001384-20_4_full"
+    },
+    "1,3,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00006675-12_1_front"
+    },
+    "1,14,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 14,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00006215-04_4_full"
+    },
+    "2,6,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 6,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00000910-02_1_front"
+    },
+    "1,7,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00000315-01_1_front"
+    },
+    "4,16,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 16,
+        "occurences": 3,
+        "path": "00006552-02_1_front"
+    },
+    "4,10,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 6,
+        "occurences": 3,
+        "path": "00003094-01_4_full"
+    },
+    "2,14,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 14,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00002176-06_1_front"
+    },
+    "1,4,15": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 15,
+        "occurences": 2,
+        "path": "00002162-59_4_full"
+    },
+    "2,16,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00000895-02_1_front"
+    },
+    "2,8,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00005517-01_1_front"
+    },
+    "3,0,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00006285-02_4_full"
+    },
+    "1,8,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 16,
+        "occurences": 3,
+        "path": "00001578-07_7_additional"
+    },
+    "1,17,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 17,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00000567-02_1_front"
+    },
+    "3,0,10": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00003636-05_4_full"
+    },
+    "3,4,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00005155-01_7_additional"
+    },
+    "1,2,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00003523-09_4_full"
+    },
+    "1,12,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00003593-01_4_full"
+    },
+    "2,5,11": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00003343-08_4_full"
+    },
+    "4,4,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 6,
+        "occurences": 4,
+        "path": "00002091-01_1_front"
+    },
+    "1,11,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 11,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00005212-03_1_front"
+    },
+    "2,2,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 4,
+        "occurences": 3,
+        "path": "00005668-02_7_additional"
+    },
+    "1,16,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 4,
+        "occurences": 2,
+        "path": "00005517-02_1_front"
+    },
+    "1,12,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00007083-02_1_front"
+    },
+    "1,14,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 14,
+        "lower_cluster": 3,
+        "occurences": 2,
+        "path": "00005138-09_1_front"
+    },
+    "1,12,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00005210-01_1_front"
+    },
+    "3,15,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00007961-06_4_full"
+    },
+    "2,19,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00001072-02_7_additional"
+    },
+    "2,19,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 1,
+        "occurences": 9,
+        "path": "00005893-05_7_additional"
+    },
+    "1,4,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 9,
+        "occurences": 9,
+        "path": "00005762-02_1_front"
+    },
+    "4,16,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 12,
+        "occurences": 4,
+        "path": "00000061-06_4_full"
+    },
+    "2,16,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00002782-02_7_additional"
+    },
+    "2,19,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00003523-55_4_full"
+    },
+    "2,10,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00003917-49_4_full"
+    },
+    "1,19,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 16,
+        "occurences": 3,
+        "path": "00006066-03_4_full"
+    },
+    "2,17,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 17,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00006218-03_1_front"
+    },
+    "4,2,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00003870-01_7_additional"
+    },
+    "2,8,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 13,
+        "occurences": 5,
+        "path": "00000395-01_7_additional"
+    },
+    "3,17,5": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00005635-33_4_full"
+    },
+    "1,0,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 16,
+        "occurences": 7,
+        "path": "00002162-49_4_full"
+    },
+    "2,7,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00002223-06_1_front"
+    },
+    "3,4,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00001296-01_4_full"
+    },
+    "4,8,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00002133-02_4_full"
+    },
+    "4,0,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00007626-02_1_front"
+    },
+    "3,1,19": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00005483-02_4_full"
+    },
+    "1,9,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 12,
+        "occurences": 3,
+        "path": "00001901-02_1_front"
+    },
+    "1,5,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 9,
+        "occurences": 3,
+        "path": "00000969-06_7_additional"
+    },
+    "2,8,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00003690-02_4_full"
+    },
+    "2,10,5": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 5,
+        "occurences": 3,
+        "path": "00002181-02_4_full"
+    },
+    "1,8,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00004680-04_4_full"
+    },
+    "1,4,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 18,
+        "occurences": 2,
+        "path": "00000986-01_4_full"
+    },
+    "2,16,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00005870-02_7_additional"
+    },
+    "3,2,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00000298-02_1_front"
+    },
+    "4,0,4": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 4,
+        "occurences": 4,
+        "path": "00001305-02_4_full"
+    },
+    "1,1,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00003026-02_4_full"
+    },
+    "2,11,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 11,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00005681-03_7_additional"
+    },
+    "3,6,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 6,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00005068-02_7_additional"
+    },
+    "1,5,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 13,
+        "occurences": 3,
+        "path": "00003776-04_4_full"
+    },
+    "3,7,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 2,
+        "occurences": 3,
+        "path": "00001615-05_1_front"
+    },
+    "3,16,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00005798-02_1_front"
+    },
+    "1,18,3": {
+        "skin_cluster": 1,
+        "upper_cluster": 18,
+        "lower_cluster": 3,
+        "occurences": 2,
+        "path": "00001445-04_4_full"
+    },
+    "4,0,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00001696-08_1_front"
+    },
+    "0,2,6": {
+        "skin_cluster": 0,
+        "upper_cluster": 2,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00002359-01_4_full"
+    },
+    "1,2,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00007721-34_4_full"
+    },
+    "3,19,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00005862-02_4_full"
+    },
+    "2,3,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00005659-02_1_front"
+    },
+    "1,16,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00000351-07_4_full"
+    },
+    "1,7,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00007542-10_4_full"
+    },
+    "3,9,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00006031-02_7_additional"
+    },
+    "2,19,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00002121-19_1_front"
+    },
+    "1,15,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00002621-01_4_full"
+    },
+    "2,16,11": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00007721-28_4_full"
+    },
+    "4,4,15": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00005482-03_4_full"
+    },
+    "3,1,4": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00007221-13_4_full"
+    },
+    "2,8,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00001130-01_4_full"
+    },
+    "2,8,11": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00005099-05_1_front"
+    },
+    "4,12,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 12,
+        "occurences": 4,
+        "path": "00007758-03_7_additional"
+    },
+    "4,4,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00003770-06_4_full"
+    },
+    "3,4,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00007011-06_7_additional"
+    },
+    "2,0,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00001801-11_4_full"
+    },
+    "2,11,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 11,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00002176-07_7_additional"
+    },
+    "4,4,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 4,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00000160-03_7_additional"
+    },
+    "4,5,9": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00000969-06_1_front"
+    },
+    "3,19,17": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 17,
+        "occurences": 3,
+        "path": "00002120-02_1_front"
+    },
+    "3,0,19": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00000713-02_4_full"
+    },
+    "1,17,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 17,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00006171-02_4_full"
+    },
+    "2,0,15": {
+        "skin_cluster": 2,
+        "upper_cluster": 0,
+        "lower_cluster": 15,
+        "occurences": 3,
+        "path": "00005181-05_4_full"
+    },
+    "1,7,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 13,
+        "occurences": 4,
+        "path": "00004955-01_4_full"
+    },
+    "3,4,5": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00005504-02_4_full"
+    },
+    "4,14,9": {
+        "skin_cluster": 4,
+        "upper_cluster": 14,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00001609-06_1_front"
+    },
+    "4,1,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 1,
+        "lower_cluster": 12,
+        "occurences": 5,
+        "path": "00001505-02_4_full"
+    },
+    "1,8,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00001180-01_7_additional"
+    },
+    "1,16,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 12,
+        "occurences": 6,
+        "path": "00004132-04_4_full"
+    },
+    "2,12,13": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 13,
+        "occurences": 5,
+        "path": "00006319-02_7_additional"
+    },
+    "4,10,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00005252-01_4_full"
+    },
+    "1,11,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 11,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00001689-02_4_full"
+    },
+    "4,19,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 0,
+        "occurences": 4,
+        "path": "00007726-08_7_additional"
+    },
+    "2,8,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00005909-02_1_front"
+    },
+    "3,4,4": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00003715-02_4_full"
+    },
+    "4,7,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00000853-03_4_full"
+    },
+    "3,11,3": {
+        "skin_cluster": 3,
+        "upper_cluster": 11,
+        "lower_cluster": 3,
+        "occurences": 1,
+        "path": "00006763-05_4_full"
+    },
+    "3,1,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 6,
+        "occurences": 2,
+        "path": "00003000-02_4_full"
+    },
+    "1,14,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 14,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00003202-10_1_front"
+    },
+    "1,5,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 4,
+        "occurences": 3,
+        "path": "00003951-04_4_full"
+    },
+    "4,7,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00002564-04_4_full"
+    },
+    "3,17,16": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00005435-01_4_full"
+    },
+    "1,7,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00003601-02_7_additional"
+    },
+    "1,1,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00002370-01_7_additional"
+    },
+    "2,5,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00006819-02_1_front"
+    },
+    "2,9,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00001650-02_1_front"
+    },
+    "2,5,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00007900-02_4_full"
+    },
+    "2,5,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00002095-02_4_full"
+    },
+    "1,0,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 0,
+        "lower_cluster": 19,
+        "occurences": 3,
+        "path": "00001212-15_4_full"
+    },
+    "4,9,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 9,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00004969-02_4_full"
+    },
+    "3,0,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 6,
+        "occurences": 7,
+        "path": "00006879-01_4_full"
+    },
+    "2,7,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00006657-06_1_front"
+    },
+    "2,9,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 9,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00005737-04_4_full"
+    },
+    "2,2,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00000936-04_4_full"
+    },
+    "4,3,8": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00001701-04_4_full"
+    },
+    "3,5,10": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00005311-06_7_additional"
+    },
+    "4,16,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00005716-06_4_full"
+    },
+    "2,10,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00002540-06_4_full"
+    },
+    "1,7,12": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 12,
+        "occurences": 5,
+        "path": "00002162-15_4_full"
+    },
+    "3,0,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 18,
+        "occurences": 3,
+        "path": "00007750-02_4_full"
+    },
+    "1,10,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00002187-04_4_full"
+    },
+    "4,6,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 3,
+        "occurences": 5,
+        "path": "00001590-04_4_full"
+    },
+    "4,6,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 17,
+        "occurences": 3,
+        "path": "00001868-01_7_additional"
+    },
+    "1,4,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00005269-07_7_additional"
+    },
+    "1,3,1": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 1,
+        "occurences": 3,
+        "path": "00002691-05_1_front"
+    },
+    "2,15,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00004029-09_4_full"
+    },
+    "2,19,15": {
+        "skin_cluster": 2,
+        "upper_cluster": 19,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00003338-09_7_additional"
+    },
+    "1,5,15": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00001660-09_7_additional"
+    },
+    "2,10,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 18,
+        "occurences": 2,
+        "path": "00003660-09_1_front"
+    },
+    "2,5,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00003112-08_4_full"
+    },
+    "2,16,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006602-06_4_full"
+    },
+    "2,17,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 17,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00001203-03_7_additional"
+    },
+    "4,12,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00002988-02_4_full"
+    },
+    "1,2,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006088-02_7_additional"
+    },
+    "3,19,10": {
+        "skin_cluster": 3,
+        "upper_cluster": 19,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00005536-06_4_full"
+    },
+    "3,0,4": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00002577-03_4_full"
+    },
+    "4,2,11": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00006602-20_4_full"
+    },
+    "4,12,15": {
+        "skin_cluster": 4,
+        "upper_cluster": 12,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00005085-16_4_full"
+    },
+    "1,4,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 19,
+        "occurences": 4,
+        "path": "00003732-60_4_full"
+    },
+    "3,4,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00006572-04_4_full"
+    },
+    "3,5,19": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00005311-06_1_front"
+    },
+    "4,6,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 6,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00006339-01_4_full"
+    },
+    "1,10,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00002550-02_4_full"
+    },
+    "3,2,4": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00006090-01_4_full"
+    },
+    "4,3,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00000828-05_1_front"
+    },
+    "0,17,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 17,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00000559-01_1_front"
+    },
+    "1,15,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00001975-01_4_full"
+    },
+    "3,7,16": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 16,
+        "occurences": 3,
+        "path": "00007279-06_4_full"
+    },
+    "3,1,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00003798-02_1_front"
+    },
+    "0,8,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00001621-03_4_full"
+    },
+    "4,8,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 8,
+        "lower_cluster": 0,
+        "occurences": 3,
+        "path": "00001331-01_4_full"
+    },
+    "4,16,6": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 6,
+        "occurences": 3,
+        "path": "00003936-01_4_full"
+    },
+    "0,7,12": {
+        "skin_cluster": 0,
+        "upper_cluster": 7,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00000081-01_4_full"
+    },
+    "1,16,18": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00007840-12_4_full"
+    },
+    "1,2,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00004856-01_4_full"
+    },
+    "3,16,0": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00005124-02_4_full"
+    },
+    "0,17,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 17,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00002275-02_7_additional"
+    },
+    "2,2,15": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00003917-52_4_full"
+    },
+    "1,6,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00001590-06_4_full"
+    },
+    "1,19,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00006849-04_4_full"
+    },
+    "1,3,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00007807-07_7_additional"
+    },
+    "3,1,9": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00007321-03_4_full"
+    },
+    "2,12,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 12,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00006863-42_4_full"
+    },
+    "0,7,1": {
+        "skin_cluster": 0,
+        "upper_cluster": 7,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00003827-02_1_front"
+    },
+    "4,11,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 11,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00001117-02_1_front"
+    },
+    "2,4,14": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 14,
+        "occurences": 1,
+        "path": "00007721-36_4_full"
+    },
+    "1,5,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00001484-02_4_full"
+    },
+    "1,2,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00003208-06_1_front"
+    },
+    "1,4,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 4,
+        "lower_cluster": 7,
+        "occurences": 3,
+        "path": "00002653-01_7_additional"
+    },
+    "3,2,5": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 5,
+        "occurences": 2,
+        "path": "00003501-02_7_additional"
+    },
+    "3,0,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00001696-07_1_front"
+    },
+    "1,3,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 3,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00006555-03_4_full"
+    },
+    "0,7,17": {
+        "skin_cluster": 0,
+        "upper_cluster": 7,
+        "lower_cluster": 17,
+        "occurences": 2,
+        "path": "00007321-02_7_additional"
+    },
+    "4,11,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 11,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00005913-17_4_full"
+    },
+    "1,16,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 2,
+        "occurences": 2,
+        "path": "00006091-06_7_additional"
+    },
+    "1,9,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00000509-03_7_additional"
+    },
+    "1,14,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 14,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00006475-02_4_full"
+    },
+    "4,14,3": {
+        "skin_cluster": 4,
+        "upper_cluster": 14,
+        "lower_cluster": 3,
+        "occurences": 1,
+        "path": "00005138-09_4_full"
+    },
+    "1,9,7": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00001928-02_4_full"
+    },
+    "1,1,14": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 14,
+        "occurences": 1,
+        "path": "00003732-49_4_full"
+    },
+    "1,8,17": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00002599-01_7_additional"
+    },
+    "2,2,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00006943-09_4_full"
+    },
+    "1,8,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00001277-01_4_full"
+    },
+    "4,5,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00007662-05_4_full"
+    },
+    "2,7,2": {
+        "skin_cluster": 2,
+        "upper_cluster": 7,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00007795-03_7_additional"
+    },
+    "1,16,15": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 15,
+        "occurences": 2,
+        "path": "00002201-14_4_full"
+    },
+    "4,17,17": {
+        "skin_cluster": 4,
+        "upper_cluster": 17,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00005085-02_4_full"
+    },
+    "3,6,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 6,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006956-03_7_additional"
+    },
+    "3,10,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00003865-02_7_additional"
+    },
+    "3,10,16": {
+        "skin_cluster": 3,
+        "upper_cluster": 10,
+        "lower_cluster": 16,
+        "occurences": 2,
+        "path": "00001669-02_1_front"
+    },
+    "1,10,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00006943-15_4_full"
+    },
+    "2,16,18": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00003523-52_4_full"
+    },
+    "4,10,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 10,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00003865-02_1_front"
+    },
+    "2,5,15": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00006530-01_4_full"
+    },
+    "0,3,18": {
+        "skin_cluster": 0,
+        "upper_cluster": 3,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00003920-02_7_additional"
+    },
+    "4,7,2": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00000926-01_7_additional"
+    },
+    "4,7,13": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 13,
+        "occurences": 2,
+        "path": "00007982-12_1_front"
+    },
+    "2,4,11": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 11,
+        "occurences": 2,
+        "path": "00000257-05_4_full"
+    },
+    "4,0,9": {
+        "skin_cluster": 4,
+        "upper_cluster": 0,
+        "lower_cluster": 9,
+        "occurences": 2,
+        "path": "00005762-02_7_additional"
+    },
+    "1,12,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00006613-01_1_front"
+    },
+    "1,8,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00003523-26_4_full"
+    },
+    "4,9,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 9,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00007012-05_1_front"
+    },
+    "3,16,5": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00002287-06_1_front"
+    },
+    "2,18,1": {
+        "skin_cluster": 2,
+        "upper_cluster": 18,
+        "lower_cluster": 1,
+        "occurences": 2,
+        "path": "00003929-01_1_front"
+    },
+    "1,7,19": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 19,
+        "occurences": 3,
+        "path": "00000853-03_1_front"
+    },
+    "2,17,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 17,
+        "lower_cluster": 0,
+        "occurences": 2,
+        "path": "00006108-02_1_front"
+    },
+    "2,5,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00000354-06_4_full"
+    },
+    "0,8,6": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00003567-01_1_front"
+    },
+    "4,19,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00000709-02_7_additional"
+    },
+    "4,14,1": {
+        "skin_cluster": 4,
+        "upper_cluster": 14,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00005989-03_4_full"
+    },
+    "1,1,4": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00002201-06_1_front"
+    },
+    "4,2,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 2,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00003208-06_4_full"
+    },
+    "4,14,0": {
+        "skin_cluster": 4,
+        "upper_cluster": 14,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00003202-10_4_full"
+    },
+    "4,19,16": {
+        "skin_cluster": 4,
+        "upper_cluster": 19,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00007538-03_1_front"
+    },
+    "1,11,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 11,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00003831-06_1_front"
+    },
+    "2,4,16": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00001691-05_4_full"
+    },
+    "3,8,18": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00006726-01_7_additional"
+    },
+    "2,3,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00000178-02_7_additional"
+    },
+    "3,16,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00001028-01_4_full"
+    },
+    "2,3,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00002522-02_1_front"
+    },
+    "1,7,9": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00002162-17_4_full"
+    },
+    "2,15,6": {
+        "skin_cluster": 2,
+        "upper_cluster": 15,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00007690-02_4_full"
+    },
+    "1,16,13": {
+        "skin_cluster": 1,
+        "upper_cluster": 16,
+        "lower_cluster": 13,
+        "occurences": 1,
+        "path": "00006732-03_4_full"
+    },
+    "3,1,11": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00002121-10_1_front"
+    },
+    "3,16,1": {
+        "skin_cluster": 3,
+        "upper_cluster": 16,
+        "lower_cluster": 1,
+        "occurences": 1,
+        "path": "00005664-05_4_full"
+    },
+    "3,7,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 7,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00001289-02_4_full"
+    },
+    "1,1,15": {
+        "skin_cluster": 1,
+        "upper_cluster": 1,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00006863-53_4_full"
+    },
+    "1,2,6": {
+        "skin_cluster": 1,
+        "upper_cluster": 2,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00007383-04_4_full"
+    },
+    "2,10,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00007721-31_4_full"
+    },
+    "0,0,18": {
+        "skin_cluster": 0,
+        "upper_cluster": 0,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00001742-02_4_full"
+    },
+    "1,5,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 5,
+        "lower_cluster": 16,
+        "occurences": 3,
+        "path": "00007776-02_7_additional"
+    },
+    "1,8,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 8,
+        "occurences": 2,
+        "path": "00000350-02_4_full"
+    },
+    "0,19,7": {
+        "skin_cluster": 0,
+        "upper_cluster": 19,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00005726-02_4_full"
+    },
+    "1,7,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00003523-10_4_full"
+    },
+    "3,4,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 4,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006219-07_1_front"
+    },
+    "2,4,8": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 8,
+        "occurences": 3,
+        "path": "00002288-01_1_front"
+    },
+    "1,15,8": {
+        "skin_cluster": 1,
+        "upper_cluster": 15,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00002359-04_4_full"
+    },
+    "4,13,19": {
+        "skin_cluster": 4,
+        "upper_cluster": 13,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00005206-09_4_full"
+    },
+    "2,13,17": {
+        "skin_cluster": 2,
+        "upper_cluster": 13,
+        "lower_cluster": 17,
+        "occurences": 1,
+        "path": "00000322-06_1_front"
+    },
+    "3,5,16": {
+        "skin_cluster": 3,
+        "upper_cluster": 5,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00004979-01_4_full"
+    },
+    "4,7,10": {
+        "skin_cluster": 4,
+        "upper_cluster": 7,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00002015-02_7_additional"
+    },
+    "0,1,19": {
+        "skin_cluster": 0,
+        "upper_cluster": 1,
+        "lower_cluster": 19,
+        "occurences": 2,
+        "path": "00002246-03_4_full"
+    },
+    "3,15,7": {
+        "skin_cluster": 3,
+        "upper_cluster": 15,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00003834-01_4_full"
+    },
+    "2,3,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 3,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00001929-02_1_front"
+    },
+    "0,10,0": {
+        "skin_cluster": 0,
+        "upper_cluster": 10,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00006126-02_4_full"
+    },
+    "2,8,19": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 19,
+        "occurences": 1,
+        "path": "00001578-08_1_front"
+    },
+    "1,9,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00005395-05_7_additional"
+    },
+    "2,10,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00002201-40_4_full"
+    },
+    "4,3,12": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00007372-02_7_additional"
+    },
+    "2,8,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 8,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00005085-15_4_full"
+    },
+    "2,2,7": {
+        "skin_cluster": 2,
+        "upper_cluster": 2,
+        "lower_cluster": 7,
+        "occurences": 1,
+        "path": "00006331-02_1_front"
+    },
+    "2,1,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 1,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00000025-05_4_full"
+    },
+    "3,0,14": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 14,
+        "occurences": 1,
+        "path": "00000806-02_4_full"
+    },
+    "1,6,2": {
+        "skin_cluster": 1,
+        "upper_cluster": 6,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00005263-16_4_full"
+    },
+    "4,3,18": {
+        "skin_cluster": 4,
+        "upper_cluster": 3,
+        "lower_cluster": 18,
+        "occurences": 1,
+        "path": "00003087-07_1_front"
+    },
+    "3,9,8": {
+        "skin_cluster": 3,
+        "upper_cluster": 9,
+        "lower_cluster": 8,
+        "occurences": 1,
+        "path": "00006112-02_4_full"
+    },
+    "1,8,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 8,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00007059-06_7_additional"
+    },
+    "1,19,5": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00006379-04_4_full"
+    },
+    "2,11,0": {
+        "skin_cluster": 2,
+        "upper_cluster": 11,
+        "lower_cluster": 0,
+        "occurences": 1,
+        "path": "00001404-11_4_full"
+    },
+    "4,16,7": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 7,
+        "occurences": 2,
+        "path": "00002500-01_1_front"
+    },
+    "4,16,5": {
+        "skin_cluster": 4,
+        "upper_cluster": 16,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00000159-05_4_full"
+    },
+    "1,7,15": {
+        "skin_cluster": 1,
+        "upper_cluster": 7,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00005085-30_4_full"
+    },
+    "3,8,6": {
+        "skin_cluster": 3,
+        "upper_cluster": 8,
+        "lower_cluster": 6,
+        "occurences": 1,
+        "path": "00007765-03_4_full"
+    },
+    "1,10,11": {
+        "skin_cluster": 1,
+        "upper_cluster": 10,
+        "lower_cluster": 11,
+        "occurences": 1,
+        "path": "00004159-04_4_full"
+    },
+    "3,0,5": {
+        "skin_cluster": 3,
+        "upper_cluster": 0,
+        "lower_cluster": 5,
+        "occurences": 1,
+        "path": "00007695-03_4_full"
+    },
+    "2,5,10": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00007598-03_4_full"
+    },
+    "3,1,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 1,
+        "lower_cluster": 12,
+        "occurences": 2,
+        "path": "00005016-02_1_front"
+    },
+    "2,16,14": {
+        "skin_cluster": 2,
+        "upper_cluster": 16,
+        "lower_cluster": 14,
+        "occurences": 1,
+        "path": "00003523-54_4_full"
+    },
+    "2,10,15": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00007387-05_4_full"
+    },
+    "3,2,12": {
+        "skin_cluster": 3,
+        "upper_cluster": 2,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00007638-02_4_full"
+    },
+    "1,12,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 12,
+        "lower_cluster": 10,
+        "occurences": 2,
+        "path": "00005517-01_7_additional"
+    },
+    "2,10,12": {
+        "skin_cluster": 2,
+        "upper_cluster": 10,
+        "lower_cluster": 12,
+        "occurences": 1,
+        "path": "00006863-23_4_full"
+    },
+    "1,19,10": {
+        "skin_cluster": 1,
+        "upper_cluster": 19,
+        "lower_cluster": 10,
+        "occurences": 1,
+        "path": "00003523-66_1_front"
+    },
+    "2,5,9": {
+        "skin_cluster": 2,
+        "upper_cluster": 5,
+        "lower_cluster": 9,
+        "occurences": 1,
+        "path": "00001722-07_7_additional"
+    },
+    "1,9,16": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00006217-03_7_additional"
+    },
+    "0,8,16": {
+        "skin_cluster": 0,
+        "upper_cluster": 8,
+        "lower_cluster": 16,
+        "occurences": 1,
+        "path": "00002071-06_4_full"
+    },
+    "2,4,4": {
+        "skin_cluster": 2,
+        "upper_cluster": 4,
+        "lower_cluster": 4,
+        "occurences": 1,
+        "path": "00002560-07_4_full"
+    },
+    "3,17,2": {
+        "skin_cluster": 3,
+        "upper_cluster": 17,
+        "lower_cluster": 2,
+        "occurences": 1,
+        "path": "00006306-02_4_full"
+    },
+    "1,9,15": {
+        "skin_cluster": 1,
+        "upper_cluster": 9,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00002969-10_4_full"
+    },
+    "4,5,15": {
+        "skin_cluster": 4,
+        "upper_cluster": 5,
+        "lower_cluster": 15,
+        "occurences": 1,
+        "path": "00001660-09_1_front"
+    }
+}
