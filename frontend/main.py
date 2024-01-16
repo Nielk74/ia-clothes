@@ -120,11 +120,11 @@ def write_color(color):
 
 def get_result(file_name, gender, cluster_size):
   if file_name is None:
-    st.error("Please upload an image")
+    st.error("Please upload an image of yourself")
     return
   
   clusters = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/clusters-{gender.lower()}-{cluster_size}.json').json()
-  occurences = requests.get('https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/occurences-{gender.lower()}-{cluster_size}.json').json()
+  occurences = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/occurences-{gender.lower()}-{cluster_size}.json').json()
 
   # display the image
   image = Image.open(file_name)
@@ -132,11 +132,11 @@ def get_result(file_name, gender, cluster_size):
 
   # display the detected skin color
   skin_color, pixel_count = get_skin_color(image)
-  st.header("Detected skin color")
+  st.header("Detected skin tone")
   st.markdown(write_color(skin_color), unsafe_allow_html=True)
 
   # display the clothing colors occurences matching the detected skin color
-  st.header("Clothing colors occurences")
+  st.header("Most popular clothing colors matching your skin tone")
   closest_skin_cluster_index = get_closest_skin_cluster_index(skin_color, clusters["cluster_centers_skin"])
   occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index, occurences)
   cluster_centers_upper = clusters["cluster_centers_upper"]
@@ -155,7 +155,9 @@ def get_result(file_name, gender, cluster_size):
 def render_page():
   st.title("ENSIMAG AI project")
   st.header("Clothing color matching")
-  st.write("This is a demo of our clothing color matching app.")
+  st.write("This is a demo of our clothing color matching app. It will detect your skin tone and suggest you the most popular clothing colors matching your skin tone.")
+  st.write("You can chose your gender and the number of clothing color clusters you want to use.")
+  st.write("The number of clothing color clusters is the number of colors used to represent the clothing colors. The higher the number, the more precise the result colors will be.")
 
   formCol1, formCol2 = st.columns(2)
   gender = formCol1.radio("Gender", ["Man", "Woman"])
