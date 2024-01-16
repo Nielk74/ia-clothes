@@ -150,10 +150,15 @@ def get_result(file_name, dataset, gender, cluster_size):
     value = occurences_by_skin_cluster[key]
     rgb_upper = lab_to_rgb(cluster_centers_upper[value['upper_cluster']])
     rgb_lower = lab_to_rgb(cluster_centers_lower[value['lower_cluster']])
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     col1.write(f"{i+1}. Occurences: {value['occurences']}")
     col2.markdown(f"Upper color: {write_color(rgb_upper)}", unsafe_allow_html=True)
     col3.markdown(f"Lower color: {write_color(rgb_lower)}", unsafe_allow_html=True)
+    col4.write("Example image:")
+    # write path in a file
+    # f = open(f"images-path-{dataset}", "a")
+    # f = open(f"images-path-{gender}-{cluster_size}", "a")
+    # f.write(f"{value['path']}\n")
 
 
 def render_page():
