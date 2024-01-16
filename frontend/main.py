@@ -158,7 +158,7 @@ def get_result(file_name, dataset, gender, cluster_size):
     if (dataset == "DeepFashion-MultiModal"):
       col4.image(requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/deepfashion/example-images/{value["path"]}.jpg').content, width=100)
     else:
-      col4.image(requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/style-du-monde/example-images/{value["path"]}.jpg').content, width=100)
+      col4.image(requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/style-du-monde/example-images/{value["path"].split("/")[-1]}').content, width=100)
     # write path in a file
     # f = open(f"images-path-{dataset}", "a")
     # f = open(f"images-path-{gender}-{cluster_size}", "a")
