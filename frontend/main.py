@@ -118,13 +118,17 @@ def write_color(color):
   return f'<p style="background-color:rgb{color}; width:40px; height: 40px"></p>'
 
 
-def get_result(file_name, gender, cluster_size):
+def get_result(file_name, dataset, gender, cluster_size):
   if file_name is None:
     st.error("Please upload an image of yourself")
     return
   
-  clusters = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/clusters-{gender.lower()}-{cluster_size}.json').json()
-  occurences = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/occurences-{gender.lower()}-{cluster_size}.json').json()
+  if dataset == "Style du Monde":
+    clusters = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/style-du-monde/clusters-sdm-20.json').json()
+    occurences = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/style-du-monde/occurences-sdm-20.json').json()
+  else:
+    clusters = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/deepfashion/clusters-{gender.lower()}-{cluster_size}.json').json()
+    occurences = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/deepfashion/occurences-{gender.lower()}-{cluster_size}.json').json()
 
   # display the image
   image = Image.open(file_name)
@@ -156,19 +160,21 @@ def render_page():
   st.title("ENSIMAG AI project")
   st.header("Clothing color matching")
   st.write("This is a demo of our clothing color matching app. It will detect your skin tone and suggest you the most popular clothing colors matching your skin tone.")
-  st.write("You can chose your gender and the number of clothing color clusters you want to use.")
+  st.write("You can choose a dataset which is used to retrieve the clothing colors. We used two datasets: [DeepFashion-MultiModal](https://github.com/yumingj/DeepFashion-MultiModal) and [Style du Monde](https://styledumonde.com).")
+  st.write("When choosing the DeepFashion-MultiModal dataset, you can also choose your gender and the number of clothing color clusters you want to use.")
   st.write("The number of clothing color clusters is the number of colors used to represent the clothing colors. The higher the number, the more precise the result colors will be.")
 
-  formCol1, formCol2 = st.columns(2)
-  gender = formCol1.radio("Gender", ["Man", "Woman"])
-  cluster_size = formCol2.radio("Number of clothing color clusters", ["10", "20"])
+  formCol1, formCol2, formCol3 = st.columns(3)
+  dataset = formCol1.radio("Dataset", ["DeepFashion-MultiModal", "Style du Monde"])
+  gender = formCol2.radio("Gender", ["Man", "Woman"], disabled=(dataset == "Style du Monde"))
+  cluster_size = formCol3.radio("Number of clothing color clusters", ["10", "20"], disabled=(dataset == "Style du Monde"))
 
   file_name = st.file_uploader("Upload a full body image")
 
   with st.container():
     if st.button("Submit"):
       with st.spinner('Processing...'):
-        get_result(file_name, gender, cluster_size)
+        get_result(file_name, dataset, gender, cluster_size)
 
 
 if __name__ == "__main__":
