@@ -10,8 +10,6 @@ import colour
 from colour.models import RGB_COLOURSPACE_sRGB
 import requests
 
-clusters = requests.get('https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/clusters.json').json()
-occurences = requests.get('https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/occurences.json').json()
 processor = SegformerImageProcessor.from_pretrained("mattmdjaga/segformer_b2_clothes")
 model = AutoModelForSemanticSegmentation.from_pretrained("mattmdjaga/segformer_b2_clothes")
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
@@ -90,8 +88,8 @@ def lab_to_rgb(lab):
     return lab[0]
 
 
-def get_closest_skin_cluster_index(skin_color):
-    cluster_centers_skin = clusters["cluster_centers_skin"]
+def get_closest_skin_cluster_index(skin_color, clusters_centers_skin):
+    cluster_centers_skin = clusters_centers_skin
     lab_input = rgb_to_lab(skin_color)
     # find the closest skin cluster index
     closest_skin_cluster_index = 0
@@ -105,7 +103,7 @@ def get_closest_skin_cluster_index(skin_color):
     return closest_skin_cluster_index
 
 
-def get_occurences_by_skin_cluster_index(skin_cluster_index):
+def get_occurences_by_skin_cluster_index(skin_cluster_index, occurences):
     occurences_by_skin_cluster = {}
     for key, value in occurences.items():
         if value['skin_cluster'] == skin_cluster_index:
@@ -120,10 +118,13 @@ def write_color(color):
   return f'<p style="background-color:rgb{color}; width:40px; height: 40px"></p>'
 
 
-def get_result(file_name):
-  if (file_name is None):
+def get_result(file_name, gender, cluster_size):
+  if file_name is None:
     st.error("Please upload an image")
     return
+  
+  clusters = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/clusters-{gender.lower()}-{cluster_size}.json').json()
+  occurences = requests.get('https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/occurences-{gender.lower()}-{cluster_size}.json').json()
 
   # display the image
   image = Image.open(file_name)
@@ -136,8 +137,8 @@ def get_result(file_name):
 
   # display the clothing colors occurences matching the detected skin color
   st.header("Clothing colors occurences")
-  closest_skin_cluster_index = get_closest_skin_cluster_index(skin_color)
-  occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index)
+  closest_skin_cluster_index = get_closest_skin_cluster_index(skin_color, clusters["cluster_centers_skin"])
+  occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index, occurences)
   cluster_centers_upper = clusters["cluster_centers_upper"]
   cluster_centers_lower = clusters["cluster_centers_lower"]
   for i in range(10):
@@ -156,17 +157,16 @@ def render_page():
   st.header("Clothing color matching")
   st.write("This is a demo of our clothing color matching app.")
 
-  # TODO use form to get user input
-  # formCol1, formCol2 = st.columns(2)
-  # formCol1.radio("Gender", ["Male", "Female"])
-  # formCol2.radio("Number of clothing color clusters", ["20", "40"])
+  formCol1, formCol2 = st.columns(2)
+  gender = formCol1.radio("Gender", ["Man", "Woman"])
+  cluster_size = formCol2.radio("Number of clothing color clusters", ["10", "20"])
 
   file_name = st.file_uploader("Upload a full body image")
 
   with st.container():
     if st.button("Submit"):
       with st.spinner('Processing...'):
-        get_result(file_name)
+        get_result(file_name, gender, cluster_size)
 
 
 if __name__ == "__main__":
