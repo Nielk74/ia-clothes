@@ -165,7 +165,8 @@ def render_page():
   st.title("ENSIMAG AI project")
   st.header("Clothing color matching")
   st.write("This is a demo of our clothing color matching app. It will detect your skin tone and suggest you the most popular clothing colors matching your skin tone.")
-  st.write("You can choose a dataset which is used to retrieve the clothing colors. We used two datasets: [DeepFashion-MultiModal](https://github.com/yumingj/DeepFashion-MultiModal) and [Style du Monde](https://styledumonde.com).")
+  st.write("You can choose the dataset used to retrieve the clothing colors. We used two datasets: [DeepFashion-MultiModal](https://github.com/yumingj/DeepFashion-MultiModal) and [Style du Monde](https://styledumonde.com).")
+  st.write("When choosing the Style du Monde dataset, be aware that it is more suited for women.")
   st.write("When choosing the DeepFashion-MultiModal dataset, you can also choose your gender and the number of clothing color clusters you want to use.")
   st.write("The number of clothing color clusters is the number of colors used to represent the clothing colors. The higher the number, the more precise the result colors will be.")
 
