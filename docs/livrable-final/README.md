@@ -68,6 +68,20 @@ Nous utilisons également un modèle pré-entraîné pour la détection de perso
 ## Méthodes utilisées et leur justification
 
 ## Évaluation des aspects environnementaux et sociétaux
+L’outil que nous avons créé a un impact environnemental et sociétal tant sur le plan de la conception que sur celui de l’utilisation. 
+
+### Impact de la conception
+TODO
+- cout pour la récupération des couleurs (temps, cpu, mémoire) : donner un ordre de grandeur de la quantité d'énergie utiisée
+- cout pour le clsutering, la génération des matrices d'occurences
+
+### Impact de l'utilisation
+Le fait que notre application fasse des suggestions relatifs au style vestimentaire engendre des conséquences potentielles en matière de surconsommation de vêtements et donc de surconsommation de ressources et d'énergie. Il y a également le risque de normalisation des styles vestimentaires dictée par l'IA qui soulève des questions sur la diversité et l'individualité de l'expression personnelle.
+
+Nous sommes également conscient que notre application porte sur les points sensibles que sont la couleur de peau et le traitement d'image personnelle. Dans le cadre de notre projet, des limites techniques et financières ont fait que nous avons déployé notre application sur un serveur tiers (Streamlit) et que nous avons hébergé les clusters et les matrices d'occurrences générés sur un dépôt GitHub public. Nous avons conscience que cela peut poser des problèmes de sécurité et de confidentialité. Nous avons donc réfléchi à des solutions pour pallier à ces problèmes :
+- Flouter la photo qu'envoie l'utilisateur pour l'anonymiser
+- Éviter d'utiliser un serveur tiers pour déployer notre application
+- Chiffrer les échanges entre l'utilisateur et le serveur
 
 ## Bibliographie
 
