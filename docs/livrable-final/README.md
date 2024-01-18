@@ -5,9 +5,11 @@ Nous souhaitons proposer des idées de tenues vestimentaires en fonction de la p
 
 ## Données utilisées
 Nous utilisons deux datasets pour les photos de mannequins :
+
 - [DeepFashion](https://github.com/yumingj/DeepFashion-MultiModal) : Il contient 44 096 photos de mannequin dont beaucoup sont dupliquées avec des angles différents. Nous n'avons besoin que des photos où on voit le mannequin dans son ensemble (haut et bas) donc nous avons filtré le jeu données pour ne garder que les photos exploitables. Les images étant de relativement grande taille (environ 1000x1000), nous avons redimensionné les images afin d'accélérer le temps de traitement par la suite.
 
 Script de filtrage basé sur le nom des fichiers :
+
 ```python
 import glob
 import os
@@ -35,10 +37,11 @@ for file in original_files:
                 if "_front" in similar or "_additional" in similar:
                     continue
                 else:
-                    os.replace(similar, trash_path + "/" + similar.split("/")[-1]) 
+                    os.replace(similar, trash_path + "/" + similar.split("/")[-1])
 ```
 
 Script de redimensionnement des images :
+
 ```python
 import cv2
 import glob
@@ -54,16 +57,18 @@ for file in original_files:
     img_50 = cv2.resize(img, None, fx = 0.50, fy = 0.50)
     cv2.imwrite(resized_path + "/" + file.split("/")[-1], img_50)
 ```
-- [Style du Monde](https://styledumonde.com/) : 7 841 photos ont constitué notre deuxième dataset. Ce site web partage des photographies de célébrités prises dans la rue ou lors d'évènements importants dans le domaine de la mode. L'intérêt était d'explorer des personnes pouvant porter des habits de tous les jours mais aussi plus originales. Nous avons scrapé toutes les photos proposées de Juillet 2008 à Septembre 2023 avec l'utilisation de *Scrapy* et retirer celles inexploitables (plusieurs personnes présentes, personne / visage non visible, pas une photo en pied...). Les photos ont été redimensionnées afin d'accélérer le temps de traitement par la suite.
+
+- [Style du Monde](https://styledumonde.com/) : 7 841 photos ont constitué notre deuxième dataset. Ce site web partage des photographies de célébrités prises dans la rue ou lors d'évènements importants dans le domaine de la mode. L'intérêt était d'explorer des personnes pouvant porter des habits de tous les jours mais aussi plus originales. Nous avons scrapé toutes les photos proposées de Juillet 2008 à Septembre 2023 avec l'utilisation de _Scrapy_ et retirer celles inexploitables (plusieurs personnes présentes, personne / visage non visible, pas une photo en pied...). Les photos ont été redimensionnées afin d'accélérer le temps de traitement par la suite.
 
 Pour le scrapping, l'idée était de récupérer toutes les photos du site par année, en parcourant toutes les pages et les stocker dans un dossier. Le script ci-dessous a été lancé manuellement pour chaque année.
 
 Script de scrapping :
+
 ```python
 import scrapy
 import urllib.request
 
-class modelsSpider(scrapy.Spider): 
+class modelsSpider(scrapy.Spider):
   name = "models"
 
   def start_requests(self):
@@ -87,11 +92,12 @@ class modelsSpider(scrapy.Spider):
       urllib.request.urlretrieve(img, "scrapped_img/"+img.split("/")[-1].split(delimiter)[0]+delimiter)
 ```
 
-
 Les jeux de données filtrés et redimensionnés sont disponibles [ici](https://drive.google.com/drive/folders/1_du47YFJGXp0veHWjdE59SLThpPCwxqg?usp=drive_link).
 
 Ces jeux de données présentent tout de même plusieurs biais :
+
 - Après filtrage, nous avons 1626 images d'hommes et 12 569 images de femmes dans le dataset DeepFashion.
+- Dans le dataset Style du Monde, une prédominance des photos de femmes par rapport aux hommes est aussi présent mais nous n'avons pas séparé les photos par rapport au genre ce qui fait que ce jeu de données n'est pas exploitable pour les hommes.
 - Les images proviennent d'une source occidentale donc toutes les populations et style ne sont pas représentées.
 - Les images sont de qualité professionnelle avec une lumière permettant de bien percevoir les couleurs. Ce ne sera pas forcément le cas de photos prises par des utilisateurs donc le jeu de données ne représente pas parfaitement la réalité de notre cas d'usage.
 
@@ -100,17 +106,21 @@ Nous utilisons également un modèle pré-entraîné pour la détection de perso
 ## Méthodes utilisées et leur justification
 
 ## Évaluation des aspects environnementaux et sociétaux
-L’outil que nous avons créé a un impact environnemental et sociétal tant sur le plan de la conception que sur celui de l’utilisation. 
+L’outil que nous avons créé a un impact environnemental et sociétal tant sur le plan de la conception que sur celui de l’utilisation.
 
 ### Impact de la conception
+
 TODO
+
 - cout pour la récupération des couleurs (temps, cpu, mémoire) : donner un ordre de grandeur de la quantité d'énergie utiisée
 - cout pour le clsutering, la génération des matrices d'occurences
 
 ### Impact de l'utilisation
+
 Le fait que notre application fasse des suggestions relatifs au style vestimentaire engendre des conséquences potentielles en matière de surconsommation de vêtements et donc de surconsommation de ressources et d'énergie. Il y a également le risque de normalisation des styles vestimentaires dictée par l'IA qui soulève des questions sur la diversité et l'individualité de l'expression personnelle.
 
 Nous sommes également conscient que notre application porte sur les points sensibles que sont la couleur de peau et le traitement d'image personnelle. Dans le cadre de notre projet, des limites techniques et financières ont fait que nous avons déployé notre application sur un serveur tiers (Streamlit) et que nous avons hébergé les clusters et les matrices d'occurrences générés sur un dépôt GitHub public. Nous avons conscience que cela peut poser des problèmes de sécurité et de confidentialité. Nous avons donc réfléchi à des solutions pour pallier à ces problèmes :
+
 - Flouter la photo qu'envoie l'utilisateur pour l'anonymiser
 - Éviter d'utiliser un serveur tiers pour déployer notre application
 - Chiffrer les échanges entre l'utilisateur et le serveur
