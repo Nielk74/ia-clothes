@@ -114,7 +114,13 @@ Pour chaque segment, on a obtenu un masque binaire. On applique ce masque sur l'
 
 ### Clustering des couleurs
 
+Le clustering repose sur la librairie sklearn avec la méthode des Kmeans. Nous avons fait ce choix car dès le départ les résultats étaient probants. Cet algorithme nous a paru être le plus intuitif ce qui permet d'accélérer le développement du projet.On fait du clustering dans un domaine à 3 dimensions pour les 3 composantes permettant de définir une couleur.
+
+On s’est tourné vers le domaine de couleur Lab pour faire le clustering. On s’était rendu compte que le domaine RGB n’était pas la meilleure solution pour faire nos groupes de couleur. Les clusters avaient tendance à se former autour de la diagonale du cube représentant les composantes RGB. Donc on se retrouvait avec des clusters représentant des nuances de gris.
+
 ### Matrice d'occurences
+
+À partir des clusters de couleurs et des tuples (peau, haut, bas), on construit autant de matrices d'occurences que de clusters de couleur de peau. Pour chaque cluster de couleur de peau, on construit une matrice d'occurences par couleur afin de déterminer les combinaisons les plus populaires.
 
 ## Évaluation des aspects environnementaux et sociétaux
 L’outil que nous avons créé a un impact environnemental et sociétal tant sur le plan de la conception que sur celui de l’utilisation.
