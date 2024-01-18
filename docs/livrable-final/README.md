@@ -127,6 +127,8 @@ Résultats du clustering dans le domaine Lab :
 
 À partir des clusters de couleurs et des tuples (peau, haut, bas), on construit autant de matrices d'occurences que de clusters de couleur de peau. Pour chaque cluster de couleur de peau, on construit une matrice d'occurences par couleur afin de déterminer les combinaisons les plus populaires.
 
+![Alt text](image.png)
+
 ## Évaluation des aspects environnementaux et sociétaux
 L’outil que nous avons créé a un impact environnemental et sociétal tant sur le plan de la conception que sur celui de l’utilisation.
 
