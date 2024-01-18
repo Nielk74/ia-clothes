@@ -71,4 +71,6 @@ Nous utilisons également un modèle pré-entraîné pour la détection de perso
 
 ## Bibliographie
 
-## Code source (notebooks, scripts, etc.)
+## Code source
+Le code source est disponible sur le dépôt GitHub du projet : https://github.com/Nielk74/ia-clothes
+Pour comprendre sont contenu, il faut se référer au fichier README.md du dépôt.
