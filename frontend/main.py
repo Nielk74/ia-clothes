@@ -35,10 +35,11 @@ def getColorDominantFromMask(image, mask):
 
   # get dominant color
   colors = extcolors.extract_from_image(pil_image)
-  return colors[0][0]
+  return colors[0][0][0]
 
 
-def get_skin_color(image):
+def get_clothes_and_skin_colors(image):
+  # Load model
   inputs = processor(images=image, return_tensors="pt").to(device)
   outputs = model(**inputs)
   logits = outputs.logits.cpu()
@@ -52,20 +53,47 @@ def get_skin_color(image):
 
   # Get the segmentation prediction
   pred_seg = upsampled_logits.argmax(dim=1)[0]
-  rows, cols = pred_seg.shape
 
+  rows, cols = pred_seg.shape
+  upper_mask = np.full((rows, cols), False, dtype=bool)
+  lower_mask = np.full((rows,cols), False, dtype=bool)
   skin_mask = np.full((rows,cols), False, dtype=bool)
-  segmentation = pred_seg.detach().cpu().numpy()
+  dress_mask = np.full((rows,cols), False, dtype=bool)
+  has_upper = False
+  has_lower = False
   has_skin = False
+  has_dress = False
+  # Iterate through the 2D tensor array with indices
+
+  # Convert pytorch tensor to numpy array to optimize
+  segmentation = pred_seg.detach().cpu().numpy()
 
   for i in range(rows):
       for j in range(cols):
         v = segmentation[i, j]
-        if v in [11,12,13,14,15]: #body parts
-          skin_mask[i,j]=  True
+        if v == 4: # upper clothes
+          upper_mask[i, j] = True
+          has_upper = True
+        elif v == 6 or v == 5: # pants or skirt
+          lower_mask[i, j] = True
+          has_lower = True
+        elif v in [11, 12, 13, 14, 15]: #body parts
+          skin_mask[i, j]=  True
           has_skin = True
+        elif v == 7: # dress:
+          dress_mask[i, j] =  True
+          has_dress = True
 
-  return getColorDominantFromMask(image,skin_mask)
+
+  if not has_skin:
+    return None
+  if has_dress:
+    dress_color = getColorDominantFromMask(image, dress_mask)
+    return (dress_color, dress_color,getColorDominantFromMask(image, skin_mask))
+  elif not has_upper or not has_lower:
+    return None
+  else:
+    return (getColorDominantFromMask(image, upper_mask), getColorDominantFromMask(image, lower_mask), getColorDominantFromMask(image, skin_mask))
 
 
 def normalize_to_srgb(rgb):
@@ -88,19 +116,18 @@ def lab_to_rgb(lab):
     return lab[0]
 
 
-def get_closest_skin_cluster_index(skin_color, clusters_centers_skin):
-    cluster_centers_skin = clusters_centers_skin
-    lab_input = rgb_to_lab(skin_color)
-    # find the closest skin cluster index
-    closest_skin_cluster_index = 0
-    closest_skin_cluster_distance = 10000
-    for skin_cluster_index in range(len(cluster_centers_skin)):
-        lab_skin_cluster = cluster_centers_skin[skin_cluster_index]
-        distance = np.linalg.norm(lab_input - lab_skin_cluster)
-        if distance < closest_skin_cluster_distance:
-            closest_skin_cluster_distance = distance
-            closest_skin_cluster_index = skin_cluster_index
-    return closest_skin_cluster_index
+def get_closest_cluster_index(lab_color, clusters):
+    lab_input = rgb_to_lab(lab_color)
+    # find the closest cluster index to the input color
+    closest_cluster_index = 0
+    closest_cluster_distance = 10000
+    for cluster_index in range(len(clusters)):
+        lab_cluster = clusters[cluster_index]
+        distance = np.linalg.norm(lab_input - lab_cluster)
+        if distance < closest_cluster_distance:
+            closest_cluster_distance = distance
+            closest_cluster_index = cluster_index
+    return closest_cluster_index
 
 
 def get_occurences_by_skin_cluster_index(skin_cluster_index, occurences):
@@ -110,6 +137,28 @@ def get_occurences_by_skin_cluster_index(skin_cluster_index, occurences):
             occurences_by_skin_cluster[key] = value
     occurences_by_skin_cluster = {k: v for k, v in sorted(occurences_by_skin_cluster.items(), key=lambda item: item[1]['occurences'], reverse=True)}
     return occurences_by_skin_cluster
+
+
+def get_max_occ(cluster):
+  max_key=max(cluster, key=lambda k: cluster[k]['occurences'])
+  return cluster[max_key]['occurences']
+
+
+def compute_score(upper_clusters, lower_clusters, skin_clusters, colors_set, occurences_by_skin_cluster, occurences):
+    max_occ = get_max_occ(occurences_by_skin_cluster)
+
+    # if there is an undetected color, we dont give a score
+    if colors_set == None:
+      return None
+    upper_color, lower_color, skin_color = colors_set
+    upper_lab, lower_lab, skin_lab = rgb_to_lab(upper_color), rgb_to_lab(lower_color), rgb_to_lab(skin_color)
+    closest_upper_cluster, closest_lower_cluster,closest_skin_cluster = get_closest_cluster_index(upper_lab, upper_clusters), get_closest_cluster_index(lower_lab, lower_clusters), get_closest_cluster_index(skin_lab, skin_clusters)
+    key = str(closest_skin_cluster) + ',' + str(closest_upper_cluster) +',' +str(closest_lower_cluster)
+    print(key)
+    if key in occurences:
+        return (occurences[key]['occurences']/max_occ) * 30 + 70
+    else:
+        return None
 
 
 def write_color(color):
@@ -135,16 +184,29 @@ def get_result(file_name, dataset, gender, cluster_size):
   st.image(image)
 
   # display the detected skin color
-  skin_color, pixel_count = get_skin_color(image)
+  colors_set = get_clothes_and_skin_colors(image)
+  if (colors_set is None):
+    st.error("Please upload a full body image")
+    return
+  skin_color = colors_set[2]
   st.header("Detected skin tone")
   st.markdown(write_color(skin_color), unsafe_allow_html=True)
 
-  # display the clothing colors occurences matching the detected skin color
-  st.header("Most popular clothing colors matching your skin tone")
-  closest_skin_cluster_index = get_closest_skin_cluster_index(skin_color, clusters["cluster_centers_skin"])
-  occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index, occurences)
+  # display a score
   cluster_centers_upper = clusters["cluster_centers_upper"]
   cluster_centers_lower = clusters["cluster_centers_lower"]
+  cluster_centers_skin = clusters["cluster_centers_skin"]
+  closest_skin_cluster_index = get_closest_cluster_index(skin_color, cluster_centers_skin)
+  occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index, occurences)
+  score = compute_score(cluster_centers_upper,  cluster_centers_lower, cluster_centers_skin, colors_set, occurences_by_skin_cluster, occurences)
+  st.header("Score")
+  if score is None:
+    st.write("We couldn't determine your score. Please try again with another image.")
+  else:
+    st.write(f"{score}%")
+
+  # display the clothing colors occurences matching the detected skin color
+  st.header("Most popular clothing colors matching your skin tone")
   for i in range(10):
     key = list(occurences_by_skin_cluster.keys())[i]
     value = occurences_by_skin_cluster[key]
