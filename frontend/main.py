@@ -131,7 +131,7 @@ def get_result(file_name, dataset, gender, cluster_size):
     occurences = requests.get(f'https://raw.githubusercontent.com/Nielk74/ia-clothes/master/data/results/deepfashion/occurences-{gender.lower()}-{cluster_size}.json').json()
 
   # display the image
-  image = Image.open(file_name)
+  image = Image.open(file_name).convert("RGB")
   st.image(image)
 
   # display the detected skin color
