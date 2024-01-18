@@ -106,6 +106,19 @@ def rgb_to_lab(rgb):
     rgb = colour.XYZ_to_Lab(rgb)
     return rgb
 
+def rgb_to_lab_clothes(rgb):
+    rgb = normalize_to_srgb(rgb)
+    rgb = colour.RGB_to_XYZ(rgb, *color_space)
+    rgb = colour.XYZ_to_Lab(rgb)
+    if rgb[0] < 45 or rgb[0] > 90:
+      rgb[1] = 0
+      rgb[2] = 0
+    if rgb[0] < 45:
+      rgb[0] = 40
+    if rgb[0] > 90:
+      rgb[0] = 95
+    return rgb
+
 
 def lab_to_rgb(lab):
     lab = np.array(lab)
@@ -116,8 +129,11 @@ def lab_to_rgb(lab):
     return lab[0]
 
 
-def get_closest_cluster_index(lab_color, clusters):
-    lab_input = rgb_to_lab(lab_color)
+def  get_closest_cluster_index(lab_color, clusters, is_clothes=False):
+    if is_clothes:
+      lab_input = rgb_to_lab_clothes(lab_color)
+    else:
+      lab_input = rgb_to_lab(lab_color)
     # find the closest cluster index to the input color
     closest_cluster_index = 0
     closest_cluster_distance = 10000
@@ -151,10 +167,10 @@ def compute_score(upper_clusters, lower_clusters, skin_clusters, colors_set, occ
     if colors_set == None:
       return None
     upper_color, lower_color, skin_color = colors_set
-    upper_lab, lower_lab, skin_lab = rgb_to_lab(upper_color), rgb_to_lab(lower_color), rgb_to_lab(skin_color)
-    closest_upper_cluster, closest_lower_cluster,closest_skin_cluster = get_closest_cluster_index(upper_lab, upper_clusters), get_closest_cluster_index(lower_lab, lower_clusters), get_closest_cluster_index(skin_lab, skin_clusters)
+    closest_upper_cluster, closest_lower_cluster,closest_skin_cluster = get_closest_cluster_index(upper_color, upper_clusters), get_closest_cluster_index(lower_color, lower_clusters), get_closest_cluster_index(skin_color, skin_clusters)
     key = str(closest_skin_cluster) + ',' + str(closest_upper_cluster) +',' +str(closest_lower_cluster)
     print(key)
+    print(occurences[key]['occurences'])
     if key in occurences:
         return (occurences[key]['occurences']/max_occ) * 30 + 70
     else:
