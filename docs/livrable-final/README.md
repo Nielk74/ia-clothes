@@ -6,7 +6,7 @@ Nous souhaitons proposer des idées de tenues vestimentaires en fonction de la p
 ## Données utilisées
 Nous utilisons deux datasets pour les photos de mannequins :
 
-- [DeepFashion](https://github.com/yumingj/DeepFashion-MultiModal) : Il contient 44 096 photos de mannequin dont beaucoup sont dupliquées avec des angles différents. Nous n'avons besoin que des photos où on voit le mannequin dans son ensemble (haut et bas) donc nous avons filtré le jeu données pour ne garder que les photos exploitables. Les images étant de relativement grande taille (environ 1000x1000), nous avons redimensionné les images afin d'accélérer le temps de traitement par la suite.
+- [DeepFashion](#deepfashion) : Il contient 44 096 photos de mannequin dont beaucoup sont dupliquées avec des angles différents. Nous n'avons besoin que des photos où on voit le mannequin dans son ensemble (haut et bas) donc nous avons filtré le jeu données pour ne garder que les photos exploitables. Les images étant de relativement grande taille (environ 1000x1000), nous avons redimensionné les images afin d'accélérer le temps de traitement par la suite.
 
 Script de filtrage basé sur le nom des fichiers :
 
@@ -58,7 +58,7 @@ for file in original_files:
     cv2.imwrite(resized_path + "/" + file.split("/")[-1], img_50)
 ```
 
-- [Style du Monde](https://styledumonde.com/) : 7 841 photos ont constitué notre deuxième dataset. Ce site web partage des photographies de célébrités prises dans la rue ou lors d'évènements importants dans le domaine de la mode. L'intérêt était d'explorer des personnes pouvant porter des habits de tous les jours mais aussi plus originales. Nous avons scrapé toutes les photos proposées de Juillet 2008 à Septembre 2023 avec l'utilisation de _Scrapy_ et retirer celles inexploitables (plusieurs personnes présentes, personne / visage non visible, pas une photo en pied...). Les photos ont été redimensionnées afin d'accélérer le temps de traitement par la suite.
+- [Style du Monde](#styledumonde) : 7 841 photos ont constitué notre deuxième dataset. Ce site web partage des photographies de célébrités prises dans la rue ou lors d'évènements importants dans le domaine de la mode. L'intérêt était d'explorer des personnes pouvant porter des habits de tous les jours mais aussi plus originales. Nous avons scrapé toutes les photos proposées de Juillet 2008 à Septembre 2023 avec l'utilisation de _Scrapy_ et retirer celles inexploitables (plusieurs personnes présentes, personne / visage non visible, pas une photo en pied...). Les photos ont été redimensionnées afin d'accélérer le temps de traitement par la suite.
 
 Pour le scrapping, l'idée était de récupérer toutes les photos du site par année, en parcourant toutes les pages et les stocker dans un dossier. Le script ci-dessous a été lancé manuellement pour chaque année.
 
@@ -101,7 +101,7 @@ Ces jeux de données présentent tout de même plusieurs biais :
 - Les images proviennent d'une source occidentale donc toutes les populations et style ne sont pas représentées.
 - Les images sont de qualité professionnelle avec une lumière permettant de bien percevoir les couleurs. Ce ne sera pas forcément le cas de photos prises par des utilisateurs donc le jeu de données ne représente pas parfaitement la réalité de notre cas d'usage.
 
-Nous utilisons également un modèle pré-entraîné pour la détection de personnes et des habits : [Segformer](https://huggingface.co/mattmdjaga/segformer_b2_clothes). Ce modèle nous permet de distinguer le haut, le bas et la couleur de peau d’une personne.
+Nous utilisons également un modèle pré-entraîné pour la détection de personnes et des habits : [Segformer](#model). Ce modèle nous permet de distinguer le haut, le bas et la couleur de peau d’une personne.
 
 ## Méthodes utilisées et leur justification
 
@@ -150,6 +150,11 @@ Nous sommes également conscient que notre application porte sur les points sens
 - Chiffrer les échanges entre l'utilisateur et le serveur
 
 ## Bibliographie
+
+<a name="article">-</a> WANG Xinhui. _Towards color compatibility in fashion using machine learning._ Consulté le 18 janvier 2024. https://www.diva-portal.org/smash/get/diva2:1348501/FULLTEXT01.pdf
+<a name="model">-</a> XIE Enze, WANG Wenhai, YU Zhiding, ANANDKUMAR Anima, ALVAREZ Jose M.,LUO Ping. _SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers._ Consulté le 18 janvier 2024. https://huggingface.co/mattmdjaga/segformer_b2_clothes
+<a name="deepfashion">-</a> JIANG Yuming, YANG Shuai, QIU Haonan, WU Wayne, LOY Chen Change, LIU Ziwei. _Text2Human: Text-Driven Controllable Human Image Generation._ Consulté le 18 janvier 2024. https://github.com/yumingj/DeepFashion-MultiModal
+<a name="styledumonde">-</a> Site officiel du Style du Monde. Consulté le 18 janvier 2024. https://styledumonde.com/
 
 ## Code source
 Le code source est disponible sur le dépôt GitHub du projet : https://github.com/Nielk74/ia-clothes
