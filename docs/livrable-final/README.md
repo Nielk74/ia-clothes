@@ -54,7 +54,39 @@ for file in original_files:
     img_50 = cv2.resize(img, None, fx = 0.50, fy = 0.50)
     cv2.imwrite(resized_path + "/" + file.split("/")[-1], img_50)
 ```
-- [Style du Monde](https://styledumonde.com/) : TODO
+- [Style du Monde](https://styledumonde.com/) : 7 841 photos ont constitué notre deuxième dataset. Ce site web partage des photographies de célébrités prises dans la rue ou lors d'évènements importants dans le domaine de la mode. L'intérêt était d'explorer des personnes pouvant porter des habits de tous les jours mais aussi plus originales. Nous avons scrapé toutes les photos proposées de Juillet 2008 à Septembre 2023 avec l'utilisation de *Scrapy* et retirer celles inexploitables (plusieurs personnes présentes, personne / visage non visible, pas une photo en pied...). Les photos ont été redimensionnées afin d'accélérer le temps de traitement par la suite.
+
+Pour le scrapping, l'idée était de récupérer toutes les photos du site par année, en parcourant toutes les pages et les stocker dans un dossier. Le script ci-dessous a été lancé manuellement pour chaque année.
+
+Script de scrapping :
+```python
+import scrapy
+import urllib.request
+
+class modelsSpider(scrapy.Spider): 
+  name = "models"
+
+  def start_requests(self):
+    urls = [
+      # "https://styledumonde.com/2008",
+      # "https://styledumonde.com/2009",
+      # "https://styledumonde.com/2010",
+      "https://styledumonde.com/2011",
+      # "... until 2023",
+    ]
+    # add the url of all the pages for the corresponding year
+    for i in range (2, 4): # TODO: update the last index corresponding to the year
+      urls.append("https://styledumonde.com/2011/page/"+str(i))
+    for url in urls:
+      yield scrapy.Request(url=url, callback=self.parse)
+
+  def parse(self, response):
+    delimiter = 'jpg'
+    imgs = [img.attrib["src"] for img in response.css("img.attachment-original")]
+    for img in imgs:
+      urllib.request.urlretrieve(img, "scrapped_img/"+img.split("/")[-1].split(delimiter)[0]+delimiter)
+```
+
 
 Les jeux de données filtrés et redimensionnés sont disponibles [ici](https://drive.google.com/drive/folders/1_du47YFJGXp0veHWjdE59SLThpPCwxqg?usp=drive_link).
 
