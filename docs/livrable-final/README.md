@@ -129,6 +129,9 @@ Résultats du clustering dans le domaine Lab :
 
 ![Alt text](image.png)
 
+### Évaluation de tenue
+Lorsque l'utilisateur télécharge une photo de son corps entier, notre application extrait les couleurs dominantes de la peau, du haut et du bas. Si cette combinaison de couleurs est présente dans les matrices d'occurrences, nous attribuons une note à la tenue en fonction de sa popularité, avec un seuil minimum de 70. En cas d'absence de cette combinaison, nous évaluons la tenue en considérant la présence individuelle de la couleur du haut et du bas dans les matrices d'occurrences. Dans ce cas, la note attribuée varie entre un seuil maximum de 60.
+
 ## Évaluation des aspects environnementaux et sociétaux
 L’outil que nous avons créé a un impact environnemental et sociétal tant sur le plan de la conception que sur celui de l’utilisation.
 

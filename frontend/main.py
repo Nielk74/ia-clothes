@@ -169,12 +169,19 @@ def compute_score(upper_clusters, lower_clusters, skin_clusters, colors_set, occ
     upper_color, lower_color, skin_color = colors_set
     closest_upper_cluster, closest_lower_cluster,closest_skin_cluster = get_closest_cluster_index(upper_color, upper_clusters), get_closest_cluster_index(lower_color, lower_clusters), get_closest_cluster_index(skin_color, skin_clusters)
     key = str(closest_skin_cluster) + ',' + str(closest_upper_cluster) +',' +str(closest_lower_cluster)
-    print(key)
-    print(occurences[key]['occurences'])
     if key in occurences:
         return (occurences[key]['occurences']/max_occ) * 30 + 70
     else:
-        return None
+      nb_occ = 0
+      nb_occ_upper = 0
+      nb_occ_lower = 0
+      for key, value in occurences_by_skin_cluster.items():
+        nb_occ += value['occurences']
+        if value['upper_cluster'] == closest_upper_cluster:
+          nb_occ_upper += value['occurences']
+        if value['lower_cluster'] == closest_lower_cluster:
+          nb_occ_lower += value['occurences']
+      return ((nb_occ_upper + nb_occ_lower)/nb_occ) * 50 + 30
 
 
 def write_color(color):
@@ -207,6 +214,9 @@ def get_result(file_name, dataset, gender, cluster_size):
   skin_color = colors_set[2]
   st.header("Detected skin tone")
   st.markdown(write_color(skin_color), unsafe_allow_html=True)
+  st.header("Detected clothing colors")
+  st.markdown(write_color(colors_set[0]), unsafe_allow_html=True)
+  st.markdown(write_color(colors_set[1]), unsafe_allow_html=True)
 
   # display a score
   cluster_centers_upper = clusters["cluster_centers_upper"]
