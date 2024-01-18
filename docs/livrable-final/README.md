@@ -118,6 +118,11 @@ Le clustering repose sur la librairie sklearn avec la méthode des Kmeans. Nous 
 
 On s’est tourné vers le domaine de couleur Lab pour faire le clustering. On s’était rendu compte que le domaine RGB n’était pas la meilleure solution pour faire nos groupes de couleur. Les clusters avaient tendance à se former autour de la diagonale du cube représentant les composantes RGB. Donc on se retrouvait avec des clusters représentant des nuances de gris.
 
+Résultats du clustering dans le domaine Lab :
+![Alt text](image-4.png)
+![Alt text](image-5.png)
+![Alt text](image-3.png)
+
 ### Matrice d'occurences
 
 À partir des clusters de couleurs et des tuples (peau, haut, bas), on construit autant de matrices d'occurences que de clusters de couleur de peau. Pour chaque cluster de couleur de peau, on construit une matrice d'occurences par couleur afin de déterminer les combinaisons les plus populaires.
