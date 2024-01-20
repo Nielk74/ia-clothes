@@ -115,11 +115,11 @@ Pour chaque segment, on a obtenu un masque binaire. On applique ce masque sur l'
 
 ![Alt text](image.webp)
 
-### Clustering des couleurs
+### Clustering des couleurs
 
-Le clustering repose sur la librairie sklearn avec la méthode des Kmeans. Nous avons fait ce choix car dès le départ les résultats étaient probants. Cet algorithme nous a paru être le plus intuitif ce qui permet d'accélérer le développement du projet.On fait du clustering dans un domaine à 3 dimensions pour les 3 composantes permettant de définir une couleur.
+Le clustering repose sur la bibliothèque scikit-learn avec la méthode des k-means. Nous avons fait ce choix car dès le départ les résultats étaient probants. Cet algorithme nous a paru être le plus intuitif ce qui permet d'accélérer le développement du projet. On fait du clustering dans un domaine à 3 dimensions pour les 3 composantes permettant de définir une couleur.
 
-On s’est tourné vers le domaine de couleur Lab pour faire le clustering. On s’était rendu compte que le domaine RGB n’était pas la meilleure solution pour faire nos groupes de couleur. Les clusters avaient tendance à se former autour de la diagonale du cube représentant les composantes RGB. Donc on se retrouvait avec des clusters représentant des nuances de gris.
+On s’est tourné vers le domaine de couleur L\*a\*b\* pour faire le clustering. On s’était rendu compte que le domaine RGB n’était pas la meilleure solution pour faire nos groupes de couleur. Les clusters avaient tendance à se former autour de la diagonale du cube représentant les composantes RGB. Donc on se retrouvait avec des clusters représentant des nuances de gris.
 
 Résultats du clustering dans le domaine Lab :
 ![Alt text](image-4.png)
@@ -134,7 +134,7 @@ Résultats du clustering dans le domaine Lab :
 
 ### Évaluation de tenue
 
-Lorsque l'utilisateur télécharge une photo de son corps entier, notre application extrait les couleurs dominantes de la peau, du haut et du bas. Si cette combinaison de couleurs est présente dans les matrices d'occurrences, nous attribuons une note à la tenue en fonction de sa popularité, avec un seuil minimum de 70. En cas d'absence de cette combinaison, nous évaluons la tenue en considérant la présence individuelle de la couleur du haut et du bas dans les matrices d'occurrences. Dans ce cas, la note attribuée varie entre un seuil maximum de 60.
+Lorsque l'utilisateur télécharge une photo de son corps entier, notre application extrait les couleurs dominantes de la peau, du haut et du bas. Si cette combinaison de couleurs est présente dans les matrices d'occurrences, nous attribuons une note à la tenue en fonction de sa popularité, avec un seuil minimum de 70. En cas d'absence de cette combinaison, nous évaluons la tenue en considérant la présence individuelle de la couleur du haut et du bas dans les matrices d'occurrences. Dans ce cas, la note attribuée varie entre un seuil maximum de 70.
 
 ## Évaluation des aspects environnementaux et sociétaux
 

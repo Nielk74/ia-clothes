@@ -181,7 +181,7 @@ def compute_score(upper_clusters, lower_clusters, skin_clusters, colors_set, occ
           nb_occ_upper += value['occurences']
         if value['lower_cluster'] == closest_lower_cluster:
           nb_occ_lower += value['occurences']
-      return ((nb_occ_upper + nb_occ_lower)/nb_occ) * 50 + 30
+      return ((nb_occ_upper + nb_occ_lower)/nb_occ) * 70
 
 
 def write_color(color):
@@ -224,12 +224,13 @@ def get_result(file_name, dataset, gender, cluster_size):
   cluster_centers_skin = clusters["cluster_centers_skin"]
   closest_skin_cluster_index = get_closest_cluster_index(skin_color, cluster_centers_skin)
   occurences_by_skin_cluster = get_occurences_by_skin_cluster_index(closest_skin_cluster_index, occurences)
-  score = compute_score(cluster_centers_upper,  cluster_centers_lower, cluster_centers_skin, colors_set, occurences_by_skin_cluster, occurences)
+  score = round(compute_score(cluster_centers_upper,  cluster_centers_lower, cluster_centers_skin, colors_set, occurences_by_skin_cluster, occurences),2)
   st.header("Score")
   if score is None:
     st.write("We couldn't determine your score. Please try again with another image.")
   else:
-    st.write(f"{score}%")
+    # display the score in style font:
+    st.markdown(f'<p style="font-size: 40px; color: {"red" if score < 50 else "green"}">{score}</p>', unsafe_allow_html=True)
 
   # display the clothing colors occurences matching the detected skin color
   st.header("Most popular clothing colors matching your skin tone")
