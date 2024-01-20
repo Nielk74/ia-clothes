@@ -22,7 +22,7 @@ Le dépôt est organisé de la manière suivante :
 - `data/Clustering.ipynb` est le notebook contenant le code de clustering, disponible aussi [ici](https://colab.research.google.com/drive/10GGzqcxp0jIl4kTurNXCNJLFwRQY8UVE?usp=sharing) pour regénérer les résultats si souhaité.
 - `data/Dataset_processing.ipynb` est le notebook contenant le code de détection des couleurs, disponible aussi [ici](https://colab.research.google.com/drive/19Hn6Y-09XlVNDg7Hp798v5ZL41UBsx8S?usp=sharing) pour regénérer les CSV de `data/datasets/` si souhaité.
 - `docs/` contient les [livrables](#livrables) du projet.
-- `frontend/` contient le code source du site web de démonstrations du projet.
+- `frontend/` contient le code source du site web de démonstrations du projet. Un README explicant comment faire tourner l'application en local y est présent.
 
 ## Livrables
 Les livrables décrivant notre travail sont disponibles sur le site web du projet :
