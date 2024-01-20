@@ -1,9 +1,9 @@
-# Livrable final
+# Livrable final
 
-## Présentation du problème traité
+## Présentation du problème traité
 Nous souhaitons proposer des idées de tenues vestimentaires en fonction de la personne. Pour simplifier le problème, nous avons décidé de nous concentrer sur l’association des couleurs des vêtements et de la couleur de la peau d’une personne. Nous cherchons à trouver les tuples de couleurs (peau, haut, bas) qui vont bien ensemble en se reposant sur des photos de mannequins. On peut ainsi suggérer des palettes de couleurs (haut, bas) à partir d’une teinte de peau.
 
-## Données utilisées
+## Données utilisées
 Nous utilisons deux datasets pour les photos de mannequins :
 
 - [DeepFashion](https://github.com/yumingj/DeepFashion-MultiModal) : Il contient 44 096 photos de mannequin dont beaucoup sont dupliquées avec des angles différents. Nous n'avons besoin que des photos où on voit le mannequin dans son ensemble (haut et bas) donc nous avons filtré le jeu données pour ne garder que les photos exploitables. Les images étant de relativement grande taille (environ 1000x1000), nous avons redimensionné les images afin d'accélérer le temps de traitement par la suite.
@@ -103,7 +103,7 @@ Ces jeux de données présentent tout de même plusieurs biais :
 
 Nous utilisons également un modèle pré-entraîné pour la détection de personnes et des habits : [Segformer](https://huggingface.co/mattmdjaga/segformer_b2_clothes). Ce modèle nous permet de distinguer le haut, le bas et la couleur de peau d’une personne.
 
-## Méthodes utilisées et leur justification
+## Méthodes utilisées et leur justification
 
 ### Détection des couleurs des photos
 Pour chaque image, nous extrayons les couleurs dominantes des masques de haut, bas et de couleur de peau. Pour cet étape, on a utilisé le [modèle pré-entrainé de segmentation](https://huggingface.co/mattmdjaga/segformer_b2_clothes). Il y a 17 catégories de segmentation différentes. Pour les hommes, on s'intéresse à 3 catégories : haut, bas et peau. Pour les femmes, on s'intéresse à 5 catégories: haut, bas, peau, jupe et robe (qui peut être considéré comme une combinaison de haut et bas). On ne prend pas en compte les images dont l'une des catégories n'est pas présente.
@@ -123,7 +123,7 @@ Résultats du clustering dans le domaine Lab :
 ![Alt text](image-5.png)
 ![Alt text](image-3.png)
 
-### Matrice d'occurences
+### Matrice d'occurences
 
 À partir des clusters de couleurs et des tuples (peau, haut, bas), on construit autant de matrices d'occurences que de clusters de couleur de peau. Pour chaque cluster de couleur de peau, on construit une matrice d'occurences par couleur afin de déterminer les combinaisons les plus populaires.
 
@@ -132,7 +132,7 @@ Résultats du clustering dans le domaine Lab :
 ### Évaluation de tenue
 Lorsque l'utilisateur télécharge une photo de son corps entier, notre application extrait les couleurs dominantes de la peau, du haut et du bas. Si cette combinaison de couleurs est présente dans les matrices d'occurrences, nous attribuons une note à la tenue en fonction de sa popularité, avec un seuil minimum de 70. En cas d'absence de cette combinaison, nous évaluons la tenue en considérant la présence individuelle de la couleur du haut et du bas dans les matrices d'occurrences. Dans ce cas, la note attribuée varie entre un seuil maximum de 60.
 
-## Évaluation des aspects environnementaux et sociétaux
+## Évaluation des aspects environnementaux et sociétaux
 L’outil que nous avons créé a un impact environnemental et sociétal tant sur le plan de la conception que sur celui de l’utilisation.
 
 ### Impact de la conception
@@ -149,7 +149,7 @@ Nous sommes également conscient que notre application porte sur les points sens
 - Éviter d'utiliser un serveur tiers pour déployer notre application
 - Chiffrer les échanges entre l'utilisateur et le serveur
 
-## Bibliographie
+## Bibliographie
 
 - WANG Xinhui. _Towards color compatibility in fashion using machine learning._ Consulté le 18 janvier 2024. https://www.diva-portal.org/smash/get/diva2:1348501/FULLTEXT01.pdf
 
@@ -159,6 +159,7 @@ Nous sommes également conscient que notre application porte sur les points sens
 
 - Site officiel du Style du Monde. Consulté le 18 janvier 2024. https://styledumonde.com/
 
-## Code source
-Le code source est disponible sur le dépôt GitHub du projet : https://github.com/Nielk74/ia-clothes
+## Code source
+Le code source est disponible sur le dépôt GitHub du projet : https://github.com/Nielk74/ia-clothes.
+
 Pour comprendre sont contenu, il faut se référer au fichier README.md du dépôt.
